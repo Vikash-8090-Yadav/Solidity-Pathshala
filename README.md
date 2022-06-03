@@ -4,7 +4,7 @@
 <img src ="https://user-images.githubusercontent.com/85225156/171922224-4eebf0b7-619d-4120-838f-afe105132d39.png" width = "1050"  height ="540">
 <br>
 
-#  About Solidity-Pathshala
+##  About Solidity-Pathshala
 
 The one place for the smart contract developer to showcase their ideas and code .This repo will have all the smart contract written in the remix ide .It contains all the source code with  the screen shot.
   
