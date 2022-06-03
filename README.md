@@ -83,3 +83,6 @@ git push origin YourBranchName
 **11.** **Congratulations!** You've made your first contribution! 🙌🏼
 
 </br>
+<p align = "center">
+Show some ❤️&nbsp; by giving <img src="https://imgur.com/o7ncZFp.jpg" height=25px width=25px> to this repo
+</p>
