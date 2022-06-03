@@ -1,41 +1,40 @@
-# Solidity-Pathshala!
+# <p align = "center"> Solidity-Pathshala </p>
+<br>
 
+<img src ="https://user-images.githubusercontent.com/85225156/171922224-4eebf0b7-619d-4120-838f-afe105132d39.png" width = "1050"  height ="540">
+<br>
+
+#  About Solidity-Pathshala
 
 The one place for the smart contract developer to showcase their ideas and code .This repo will have all the smart contract written in the remix ide .It contains all the source code with  the screen shot.
-
-
-<img src ="https://user-images.githubusercontent.com/85225156/171912405-7bc4fcbc-9936-45d0-a90e-a52dd0740146.gif" height = "450" width="1000">
-
-
-
   
 ## How to Contribute?
 
-- Take a look at the existing [Issues](https://github.com/ssurbhi09/Github-Automation/issues) or [create a new issue](https://github.com/Vikash-8090-Yadav/Github-Automation/issues/new/choose)!
+- Take a look at the existing [Issues](https://github.com/ssurbhi09/Github-Automation/issues) or [create a new issue](https://github.com/Vikash-8090-Yadav/Github-Automation/issues/new)!
 - [Fork the Repo](https://github.com/Vikash-8090-Yadav/Github-Automation/issues/new/fork), create a branch for any issue that you are working on and commit your work.
 - Create a **[Pull Request](CodingEasy)** (_PR_), which will be promptly reviewed and given suggestions for improvements by the community.
 - Add screenshots or screen captures to your Pull Request to help us understand the effects of the changes that are included in your commits.
 
 ## How to make a Pull Request?
 
-**1.** Start by making a fork the [**CodingEasy**](https://github.com/arpit456jain/CodingEasy) repository. Click on the <a href="https://github.com/arpit456jain/CodingEasy/fork"><img src="https://i.imgur.com/G4z1kEe.png" height="21" width="21"></a> symbol at the top right corner.
+**1.** Start by making a fork the [**CodingEasy**](https://github.com/Vikash-8090-Yadav/Solidity-Pathshala) repository. Click on the <a href="https://github.com/Vikash-8090-Yadav/Solidity-Pathshala/fork"><img src="https://i.imgur.com/G4z1kEe.png" height="21" width="21"></a> symbol at the top right corner.
 
 **2.** Clone your new fork of the repository:
 
 ```bash
-git clone https://github.com/<your-github-username>/CodingEasy
+git clone https://github.com/<your-github-username>/Solidity-Pathshala
 ```
 
 **3.** Navigate to the new project directory:
 
 ```bash
-cd CodingEasy
+cd Solidity-Pathshala
 ```
 
 **4.** Set upstream command:
 
 ```bash
-git remote add upstream https://github.com/arpit456jain/CodingEasy.git
+git remote add upstream https://github.com/Vikash-8090-Yadav/Solidity-Pathshala.git
 ```
 
 **5.** Create a new branch:
