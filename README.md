@@ -17,7 +17,7 @@ The one place for the smart contract developer to showcase their ideas and code 
 
 ## How to make a Pull Request?
 
-**1.** Start by making a fork the [**CodingEasy**](https://github.com/Vikash-8090-Yadav/Solidity-Pathshala) repository. Click on the <a href="https://github.com/Vikash-8090-Yadav/Solidity-Pathshala/fork"><img src="https://i.imgur.com/G4z1kEe.png" height="21" width="21"></a> symbol at the top right corner.
+**1.** Start by making a fork the [**Solidity-pathshala**](https://github.com/Vikash-8090-Yadav/Solidity-Pathshala) repository. Click on the <a href="https://github.com/Vikash-8090-Yadav/Solidity-Pathshala/fork"><img src="https://i.imgur.com/G4z1kEe.png" height="21" width="21"></a> symbol at the top right corner.
 
 **2.** Clone your new fork of the repository:
 
