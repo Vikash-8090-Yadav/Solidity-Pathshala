@@ -10,7 +10,7 @@ The one place for the smart contract developer to showcase their ideas and code 
   
 ## How to Contribute?
 
-- Take a look at the existing [Issues](https://github.com/ssurbhi09/Github-Automation/issues) or [create a new issue](https://github.com/Vikash-8090-Yadav/Github-Automation/issues/new)!
+- Take a look at the existing [Issues](https://github.com/ssurbhi09/Github-Automation/issues) or [create a new issue](https://github.com/Vikash-8090-Yadav/Solidity-Pathshala/issues/new)!
 - [Fork the Repo](https://github.com/Vikash-8090-Yadav/Github-Automation/issues/new/fork), create a branch for any issue that you are working on and commit your work.
 - Create a **[Pull Request](CodingEasy)** (_PR_), which will be promptly reviewed and given suggestions for improvements by the community.
 - Add screenshots or screen captures to your Pull Request to help us understand the effects of the changes that are included in your commits.
