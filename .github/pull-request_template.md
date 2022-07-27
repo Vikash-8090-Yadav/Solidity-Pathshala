@@ -34,6 +34,6 @@ Please delete options that are not relevant. In order to tick the check box just
 
 - [] My changes generate no new warnings
 
-- [] I'm GSSOC'22 contributor
+- [] I'm HSOC'22 contributor
 
 ## Screenshots/Gif (Recommended)
