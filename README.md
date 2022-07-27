@@ -1,4 +1,4 @@
-# <p align = "center"> Solidity-Pathshala </p>
+#  <p align = "center"> Solidity-Pathshala </p>
 <br>
 
 <img src ="https://user-images.githubusercontent.com/85225156/171922224-4eebf0b7-619d-4120-838f-afe105132d39.png" width = "1050"  height ="540">
