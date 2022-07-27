@@ -18,11 +18,15 @@ Please delete options that are not relevant. In order to tick the check box just
 
 Please delete options that are not relevant. In order to tick the check box just put x inside them for example `[x]` like this
 
-- [] Project using only HTML & CSS
+- [] Project using only Solidity
 
-- [] Project using HTML, CSS & JS
+- [] Project using only Javascript
 
-- [] Project using ReactJs
+- [] Project using only Python
+
+- [] Project Test on the Remix IDE
+
+- [] Mention below if project uses other language and ide .
 
 ## Checklist ✓
 
