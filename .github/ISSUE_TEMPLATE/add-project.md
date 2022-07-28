@@ -16,7 +16,7 @@ assignees: ''
 
 ### Doc Domain
 <!--
-Leave it unchecked Owner will mark it :)
+And in order to tick the check box just but x inside them for example - [x] like this. Please delete options that are not relevant
 -->
 - [] Solidity
 - [] Python
