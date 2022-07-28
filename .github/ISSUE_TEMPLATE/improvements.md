@@ -13,10 +13,10 @@ Describe more about the change.
 ### Domain of Docs
 
 - [] Readme
-- [] Solidity , Html, Css , JavaScript , Web3.js / Ether.js
-- [] Solidity , ReactJs /NextJs , Web3.js /Ether.js
-- [] Solidity , Python3 , Web3.py
-- [] Other , feel free to mention below
+- [] Solidity
+- [] Python
+- [] JavaScript
+- [] Golang
 
 #### Are you contributing under any open-source program ?
 
