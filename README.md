@@ -25,9 +25,9 @@
  </p>
  </div>
  
-### 📌 Open Source Program</h2>
+## 📌 Open Source Program</h2>
 
-#### This project is a part of following Open Source Programs</h2>
+### This project is a part of following Open Source Programs</h2>
 
 <div align="center">
 
