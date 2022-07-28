@@ -14,7 +14,7 @@ assignees: ''
 ### Project Description
 (Describe the project over here)
 
-### Doc Domain
+### Domain
 <!--
 And in order to tick the check box just but x inside them for example - [x] like this. Please delete options that are not relevant
 -->
