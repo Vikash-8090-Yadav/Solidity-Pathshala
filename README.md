@@ -31,7 +31,7 @@
 
 <div align="center">
 
- ![logo](https://user-images.githubusercontent.com/85816852/181296374-a2273b6c-45af-45d1-b5d8-ee871a035c1f.jpg)
+<img src="./Images/logo.jpg" width="20%" height="20%">
   
 </div>
 
