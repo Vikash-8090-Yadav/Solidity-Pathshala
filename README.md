@@ -31,7 +31,7 @@
 
 <div align="center">
 
-<img src="./Images/logo.jpg" width="20%" height="20%">
+<img src="./Images/Hsoc22Logo.jpg" width="20%" height="20%">
   
 </div>
 
