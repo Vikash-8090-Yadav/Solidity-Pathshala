@@ -40,6 +40,4 @@ Please delete options that are not relevant. In order to tick the check box just
 
 - [] I'm HSOC'22 contributor
 
-- [] I'm SSOC'22 contributor
-
 ## Screenshots/Gif (Recommended)

@@ -4,37 +4,6 @@
 <img src ="https://user-images.githubusercontent.com/85225156/171922224-4eebf0b7-619d-4120-838f-afe105132d39.png" width = "1050"  height ="540">
 <br>
 
- <div align="center">
- <p>
-
-[![Open Source Love svg1](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)
-![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat)
-![Visitors](https://api.visitorbadge.io/api/visitors?path=Vikash-8090-Yadav%2FSolidity-Pathshala%20&countColor=%23263759&style=flat)
-![GitHub forks](https://img.shields.io/github/forks/Vikash-8090-Yadav/Solidity-Pathshala)
-![GitHub Repo stars](https://img.shields.io/github/stars/Vikash-8090-Yadav/Solidity-Pathshala)
-![GitHub contributors](https://img.shields.io/github/contributors/Vikash-8090-Yadav/Solidity-Pathshala)
-![GitHub last commit](https://img.shields.io/github/last-commit/Vikash-8090-Yadav/Solidity-Pathshala)
-  
-![GitHub repo size](https://img.shields.io/github/repo-size/Vikash-8090-Yadav/Solidity-Pathshala)
-
-![Github](https://img.shields.io/github/license/Vikash-8090-Yadav/Solidity-Pathshala)
-![GitHub issues](https://img.shields.io/github/issues/Vikash-8090-Yadav/Solidity-Pathshala)
-![GitHub closed issues](https://img.shields.io/github/issues-closed-raw/Vikash-8090-Yadav/Solidity-Pathshala)
-![GitHub pull requests](https://img.shields.io/github/issues-pr/Vikash-8090-Yadav/Solidity-Pathshala)
-![GitHub closed pull requests](https://img.shields.io/github/issues-pr-closed/Vikash-8090-Yadav/Solidity-Pathshala)
- </p>
- </div>
- 
-## 📌 Open Source Program</h2>
-
-### This project is a part of following Open Source Programs</h2>
-
-<div align="center">
-
-<img src="./Images/Hsoc22Logo.jpg" width="20%" height="20%">
-  
-</div>
-
 ##  About Solidity-Pathshala
 
 The one place for the smart contract developer to showcase their ideas and code .This repo will have all the smart contract written in the remix ide .It contains all the source code with  the screen shot.
@@ -114,12 +83,6 @@ git push origin YourBranchName
 **11.** **Congratulations!** You've made your first contribution! 🙌🏼
 
 </br>
-
-### Project Contributors
-<a href="https://github.com/Vikash-8090-Yadav/Solidity-Pathshala/graphs/contributors">
-<img src="https://contrib.rocks/image?repo=Vikash-8090-Yadav/Solidity-Pathshala" />
-</a>
-
 <p align = "center">
 Show some ❤️&nbsp; by giving <img src="https://imgur.com/o7ncZFp.jpg" height=25px width=25px> to this repo
 </p>

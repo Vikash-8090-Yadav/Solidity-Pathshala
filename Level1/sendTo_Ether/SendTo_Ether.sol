@@ -2,7 +2,7 @@
 
 pragma solidity >=0.7.0 <0.9.0;
 
-contract sendEather{
+contract sendEther{
     // any address to whom u want to send the faucet
     address payable user = payable(0xfbb83C2a1192dDf082d231b430052B195aCB6aED);
 
@@ -14,7 +14,7 @@ contract sendEather{
     } 
 
 
-    function getaddre() view  public returns(address){
+    function getaddress() view  public returns(address){
         return user;
     }
 
