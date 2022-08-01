@@ -43,7 +43,8 @@ And here you can see the contract address -
 
 ### Step 5:
 Click “>” before your contract you will see a button “hello” below as the contract has hello function that returns a string. 
-Click get button and you will get :
+
+Click hello button and you will get the output :
 ![5](https://user-images.githubusercontent.com/75573569/182086386-77a01a8a-1204-40b4-8b3f-a021f872d013.png)
 
 Now, we have successfully run the first smart contract in solidity.
