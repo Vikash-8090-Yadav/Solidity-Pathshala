@@ -29,9 +29,15 @@ Once compiled successfully, click “Deploy and run transactions”. and "Deploy
 ![Deploy](https://user-images.githubusercontent.com/95535448/182689529-646ab6e7-ce0c-4486-886e-413f41a96f21.png)
 
 Step 4:
-And here you can see the contract address -
+And here you can see the all the transactions and deployed contracts -
 ![Deployed contracts](https://user-images.githubusercontent.com/95535448/182689765-b55a8166-3804-4466-9d4d-494db6e8e605.png)
 
 Step 5:
+All the deployed contracts
+
+![Result](https://user-images.githubusercontent.com/95535448/182690233-9d849ceb-3007-4d04-8aae-8084259a5ab0.png)
+
+
+
 
 If u need any help here is a link to Ether.js Documentation(https://docs.ethers.io/v5/)
