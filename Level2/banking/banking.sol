@@ -12,7 +12,7 @@ contract banking{
     }
 
     modifier onlyonwner(){
-        require(msg.sender == manager,"You are not the owner of the smart contarc");
+        require(msg.sender == manager,"You are not the owner of the smart contratc");
         _;
     }
 
@@ -38,11 +38,11 @@ contract banking{
 
     // owner
 
-    function contract_balance() view  public onlyonwner returns(uint){
+    function contract_balance() view  public onlyowner returns(uint){
         return address(this).balance;
     }
 
-    function withdraw_all() public payable onlyonwner returns(bool){
+    function withdraw_all() public payable onlyowner returns(bool){
        payable(manager).transfer(contract_balance());
        return true;
     }
@@ -50,7 +50,7 @@ contract banking{
     // THis function is use to check the real account balance of the user. Not in the smart contarct 
     // but the Main account by which user sending to the  smart contract, 
     //The main a/c is : 0x5B38Da6a701c568545dCfcB03FcB875f56beddC4
-    function Check_real_account_balance() view public  onlyonwner returns(uint){
+    function Check_real_account_balance() view public  onlyowner returns(uint){
         return msg.sender.balance;
     }
     
