@@ -39,6 +39,7 @@ All the deployed contracts-
 5) partipant2 - give the address of second participant
 6) parti1_cnt_vote - counts the vote of first participant (only acessible by the owner )
 7) parti2_cnt_vote - counts the vote of second participant (only acessible by the owner )
+8) owner - This is used to check the owner address
 
 
 ![All deplyed contracts](https://user-images.githubusercontent.com/95535448/182790817-656888df-a4d4-4f07-a489-71a4e7ca8633.png)
