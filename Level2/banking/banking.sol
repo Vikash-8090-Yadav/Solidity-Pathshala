@@ -12,7 +12,7 @@ contract banking{
     }
 
     modifier onlyonwner(){
-        require(msg.sender == manager,"You are not the owner of the smart contratc");
+        require(msg.sender == manager,"You are not the owner of the smart contract");
         _;
     }
 
