@@ -43,13 +43,13 @@ contract vote{
 
     function declare_winner() view public  onlyonwner returns(string memory){
         if(user[participant1]>user[participant2]){
-            return ("Partcipant1 is wiiner !!");
+            return ("Partcipant1 is winner !!");
         }
         else if(user[participant1]==user[participant2]){
             return("Both the participant are equal");
         }
         else{
-            return ("Participant 2 is winenr");
+            return ("Participant 2 is winner");
         }  
     }
 

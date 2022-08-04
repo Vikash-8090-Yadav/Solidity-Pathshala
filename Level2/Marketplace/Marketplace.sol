@@ -12,7 +12,7 @@ struct selling_item{
 contract shop{
     string[] buyer;
     mapping(uint=>string) itemlist; // this has been made to get the partcular name of the item through the id
-    selling_item[] public  seling_items; // this is the object of the struct
+    selling_item[] public  selling_items; // this is the object of the struct
     address seller; // address of the owner
     mapping(uint=>uint) cost; // This is used to map b/w the id and the cost .
     constructor(){
@@ -27,13 +27,13 @@ contract shop{
     function AllItem(string memory _Name , uint _Id, uint _Cost)  public onlyonwner{
         itemlist[_Id] =_Name;
         cost[_Id] = _Cost;
-        seling_items.push(selling_item(_Name,_Id,_Cost,block.timestamp));
+        selling_items.push(selling_item(_Name,_Id,_Cost,block.timestamp));
     }   
 
     function buy(uint _Id)  public payable{
         uint n = cost[_Id];
-        uint cost_eather=(n*10**18); // This is used to convert the amount into the eather
-        require(cost_eather==msg.value,"Less sufficent amount");
+        uint cost_ether=(n*10**18); // This is used to convert the amount into the ether
+        require(cost_ether==msg.value,"Less sufficent amount");
         buyer.push(itemlist[_Id]);
     }
     function view_item() view  public returns(string[]memory){
