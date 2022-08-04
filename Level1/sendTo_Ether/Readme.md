@@ -37,9 +37,9 @@ And here you can see the all the transactions and deployed contracts-
 Step 5:
 All the deployed contracts-
 1) payto_contract- sends ether to another account
-2) send1-  it allows you to send value and the value you send should be less than your current balance
+2) send1- it allows you to send value and the value you send should be less than your current balance
 3) fetchbalance- it fetches the balance of the account 
-4) getadress-it gives us the adress of payable user
+4) getaddress- it gives us the adress of payable user
 
 ![Result](https://user-images.githubusercontent.com/95535448/182690233-9d849ceb-3007-4d04-8aae-8084259a5ab0.png)
 
