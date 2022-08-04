@@ -32,12 +32,10 @@ And here you can see the all the transactions and deployed contracts-
 
 Step 5:
 All the deployed contracts-
-1) partipant1_vote - it is a transact function (not payable)
-2) partipant2_vote - it is a transact function (not payable)
-3) declare_winner - declare's the winner of the poll
-4) partipant1 - gives the address of first participant
-5) partipant2 - give the address of second participant
-6) parti1_cnt_vote - calls the vote of first participant
-7) parti2_cnt_vote - calls the vote of second participant
+1) partipant1_vote - it is used to gave votes to the Participant 1
+2) partipant2_vote - it is used to gave vote to the Participant 2
+3) declare_winner - declare's the winner of the poll (only declared by the owner )
+4) parti1_cnt_vote - counts the vote of first participant (only acessible by the owner )
+5) parti2_cnt_vote - counts the vote of second participant (only acessible by the owner )
 
 ![All deplyed contracts](https://user-images.githubusercontent.com/95535448/182790817-656888df-a4d4-4f07-a489-71a4e7ca8633.png)
