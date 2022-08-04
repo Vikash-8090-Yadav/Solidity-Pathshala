@@ -47,8 +47,8 @@ contract banking{
        return true;
     }
 
-    // THis function is use to check the real account balance of the user. Not in the smart contarct 
-    // but the Main account by which user sending to the  smart contract, 
+    // This function is use to check the real account balance of the user. Not in the smart contract 
+    // but the Main account by which user sending to the smart contract, 
     //The main a/c is : 0x5B38Da6a701c568545dCfcB03FcB875f56beddC4
     function Check_real_account_balance() view public  onlyonwner returns(uint){
         return msg.sender.balance;

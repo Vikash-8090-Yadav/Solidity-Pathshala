@@ -33,7 +33,7 @@ Once compiled successfully, click “Deploy and run transactions”. and "Deploy
 
 
 ### Step 4:
-Here's the ABI and Bytecode -
+Here's the API and Bytecode -
 
 ![3](https://user-images.githubusercontent.com/75573569/182545382-b13e970f-3807-4e03-8bde-585009458415.png)
 

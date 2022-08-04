@@ -11,10 +11,10 @@ struct selling_item{
 
 contract shop{
     string[] buyer;
-    mapping(uint=>string) itemlist; // this has been made to get the partcular name of the item through the id
+    mapping(uint=>string) itemlist; // this has been made to get the particular name of the item through the id
     selling_item[] public  seling_items; // this is the object of the struct
     address seller; // address of the owner
-    mapping(uint=>uint) cost; // This is used to map b/w the id and the cost .
+    mapping(uint=>uint) cost; // This is used to map b/w the id and the cost
     constructor(){
         seller = msg.sender;
     }
