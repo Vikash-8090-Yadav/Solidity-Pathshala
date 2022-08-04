@@ -1,6 +1,6 @@
 # Smart Contract "sendToEther" in Remix-IDE
 
- A smart contract [SendTo_Ether.sol](https://github.com/Vikash-8090-Yadav/Solidity-Pathshala/blob/main/Level1/sendTo_Ether/SendTo_Ether.sol) which is used to send ether from one account to the other. This smart Contract alows us to payto another contract, fetch balance and also gives the address of the payable user.
+ A smart contract  which is used to send ether from one account to the other. This smart Contract alows us to payto another contract, fetch balance and also gives the address of the payable user.
 
 ## Getting Started :
 
