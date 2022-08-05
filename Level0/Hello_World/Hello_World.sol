@@ -3,7 +3,7 @@ pragma solidity >=0.7.0 <0.9.0;
 
 
 contract HelloWorld{
-    // Simple programme for the hellow world 
+    // Simple program for the hello world 
     // function hello() pure  public returns (string memory){
     //     return "Hello World";
     // }
