@@ -53,7 +53,7 @@ contract BuyMeACoffee {
         require(owner.send(address(this).balance));
     }
 
-    // @dev this function return a list of all memos received from friends.
+    // @dev this function returns a list of all memos received from friends.
     function getMemos() public view returns(Memo[] memory){
         return memos;
     }
