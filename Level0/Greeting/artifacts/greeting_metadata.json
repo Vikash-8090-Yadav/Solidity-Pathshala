@@ -1,0 +1,83 @@
+{
+	"compiler": {
+		"version": "0.8.7+commit.e28d00a7"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_greetings",
+						"type": "string"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [],
+				"name": "get_greet",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_greet",
+						"type": "string"
+					}
+				],
+				"name": "set_greet",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Level0/Greeting/greeting.sol": "greeting"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Level0/Greeting/greeting.sol": {
+			"keccak256": "0x9a8084e281bf7af506fd7383c4fc285f5f7ee12b3833dfc1ef55371118058c6a",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://3af3e23c0d23a83d3e8cf10149c290f17deebc8ac8e9478bd28f41cd1672a6b3",
+				"dweb:/ipfs/QmQfMukGPfKCk9ViT7UE7RaPop69w5ZCoyBCmVBjZFESy6"
+			]
+		}
+	},
+	"version": 1
+}
