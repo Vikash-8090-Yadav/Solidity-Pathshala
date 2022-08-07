@@ -6,9 +6,10 @@ contract ReversingDigits {
         uint256 reverse = 0;
         uint256 remainder;
         
+        //Here we are reversing original number
         while (n != 0) {
-            remainder = n % 10;
-            reverse = reverse * 10 + remainder;
+            remainder = n % 10; //We find the remainder and store it in the reversed
+            reverse = reverse * 10 + remainder; //We then multiply by 10 to shift the position
             n /= 10;
         }
 
