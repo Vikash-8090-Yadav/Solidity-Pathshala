@@ -9,12 +9,14 @@ contract CheckPalindrome {
         uint256 original;
         original = n;
 
+        //Here we are reversing original number
         while (n != 0) {
-            remainder = n % 10;
-            reversed = reversed * 10 + remainder;
+            remainder = n % 10; //We find the remainder and store it in the reversed
+            reversed = reversed * 10 + remainder; //We then multiply by 10 to shift the position
             n /= 10;
         }
 
+        //Here we check if original number is equal to the reversed number
         if (original == reversed) {
             return 1; //palindrome
         } else {
