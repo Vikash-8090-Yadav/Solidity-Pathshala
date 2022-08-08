@@ -1,0 +1,11 @@
+pragma solidity ^0.6.0;
+contract Product_of_num
+{
+    function get_product(int _x, int _y ) public view returns ( int )
+    {
+        int num1 = _x ;
+        int num2 = _y ;
+        int product = num1 * num2 ;
+        return product ;
+    }
+}
