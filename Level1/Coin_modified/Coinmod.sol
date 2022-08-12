@@ -19,10 +19,9 @@ contract Coin {
     }
 
     // Sends an amount of newly created coins to an address
-    // Can only be called by the contract creator
     function mint(address receiver, uint amount) public {
         balances[receiver] += amount;
-        //anybody can mint no restrictions
+        //anybody can mint no restrictions with the require statement removed **
     }
 
     // Errors allow you to provide information about
@@ -36,6 +35,7 @@ contract Coin {
     function send(address receiver, uint amount) public {
         if (amount > 50000)
             revert Restricted(amount , 'Amount too large to be sent at once');
+        //this if statement restricts the amount to be sent to the other person in one go and reverts back the transaction. **
         if (amount > balances[msg.sender])
             revert InsufficientBalance({
                 requested: amount,
