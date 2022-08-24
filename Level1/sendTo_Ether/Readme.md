@@ -35,6 +35,15 @@ And here you can see the all the transactions and deployed contracts-
 ![Deployed contracts](https://user-images.githubusercontent.com/95535448/182689765-b55a8166-3804-4466-9d4d-494db6e8e605.png)
 
 Step 5:
+All the functions involved in the contract -> 
+
+checkbalance - > check the balance of the smart contract
+
+payether -> pay ether to the smart contract
+
+payethertoacc -> pay ether to the account
+
+##Step by step guide to the Contract
 Deploy the contract and then open this section 
 
 ![Screenshot from 2022-08-24 13-36-37](https://user-images.githubusercontent.com/95926324/186368424-20295960-f42a-4ff5-9e9b-984086f270fe.png)
