@@ -36,17 +36,30 @@ And here you can see the all the transactions and deployed contracts-
 
 Step 5:
 Deploy the contract and then open this section 
+
+![Screenshot from 2022-08-24 13-36-37](https://user-images.githubusercontent.com/95926324/186368424-20295960-f42a-4ff5-9e9b-984086f270fe.png)
+
 Click on check balance to check your contract balance, It will show 0 for now.
 
-2> Go to select the value to 10 and come down and select the payether function
+2> Go to
+
+![Screenshot from 2022-08-24 13-41-20](https://user-images.githubusercontent.com/95926324/186368530-b74551f0-073d-4e79-8dc7-c79be8020345.png)
+
+select the value to 10 and come down and select the payether function
 This shall pay 10 ethers to your smart contract.
 
 3> Now, checkbalance you will notice that now It says 10 ethers. Which is great lets move on.
 Select another account now like this -> 
+![Screenshot from 2022-08-24 13-43-42](https://user-images.githubusercontent.com/95926324/186368582-d4912d60-6796-4c6f-bb79-5cbb0feee437.png)
+
 and you can replace this by the one declared as friend address in the contract just to verify :)
 
 4> Now click on -> 
+
+![Screenshot from 2022-08-24 13-45-05](https://user-images.githubusercontent.com/95926324/186368642-86059fd2-5a95-45ce-bcce-97be43c9d18a.png)
+
 This shall transfer 5 ethers out of 10 from your contract to your choosen account and you shall have something like this in the transaction status.
+![Screenshot from 2022-08-24 13-47-39](https://user-images.githubusercontent.com/95926324/186368727-f47e40f5-c1fa-4801-981c-357dbdb974ea.png)
 
 
 
