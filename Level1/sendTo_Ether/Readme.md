@@ -35,13 +35,22 @@ And here you can see the all the transactions and deployed contracts-
 ![Deployed contracts](https://user-images.githubusercontent.com/95535448/182689765-b55a8166-3804-4466-9d4d-494db6e8e605.png)
 
 Step 5:
-All the deployed contracts-
-1) payto_contract- sends ether to another account
-2) send1- it allows you to send value and the value you send should be less than your current balance
-3) fetchbalance- it fetches the balance of the account 
-4) getaddress- it gives us the adress of payable user
+Deploy the contract and then open this section 
+Click on check balance to check your contract balance, It will show 0 for now.
 
-![Result](https://user-images.githubusercontent.com/95535448/182690233-9d849ceb-3007-4d04-8aae-8084259a5ab0.png)
+2> Go to select the value to 10 and come down and select the payether function
+This shall pay 10 ethers to your smart contract.
+
+3> Now, checkbalance you will notice that now It says 10 ethers. Which is great lets move on.
+Select another account now like this -> 
+and you can replace this by the one declared as friend address in the contract just to verify :)
+
+4> Now click on -> 
+This shall transfer 5 ethers out of 10 from your contract to your choosen account and you shall have something like this in the transaction status.
+
+
+
+
 
 
 
