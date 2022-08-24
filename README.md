@@ -31,8 +31,9 @@
 
 <div align="center">
 
-<img src="./Images/Hsoc22Logo.jpg" width="20%" height="20%">
-  
+ <img src="./Images/Hsoc22Logo.jpg" width="20%" height="20%">
+ 
+ <img src="./Images/ssoc22.jpg" width="20%" height="40%">  
 </div>
 
 ##  About Solidity-Pathshala
