@@ -35,13 +35,44 @@ And here you can see the all the transactions and deployed contracts-
 ![Deployed contracts](https://user-images.githubusercontent.com/95535448/182689765-b55a8166-3804-4466-9d4d-494db6e8e605.png)
 
 Step 5:
-All the deployed contracts-
-1) payto_contract- sends ether to another account
-2) send1- it allows you to send value and the value you send should be less than your current balance
-3) fetchbalance- it fetches the balance of the account 
-4) getaddress- it gives us the adress of payable user
+All the functions involved in the contract -> 
 
-![Result](https://user-images.githubusercontent.com/95535448/182690233-9d849ceb-3007-4d04-8aae-8084259a5ab0.png)
+checkbalance - > check the balance of the smart contract
+
+payether -> pay ether to the smart contract
+
+payethertoacc -> pay ether to the account
+
+##Step by step guide to the Contract
+Deploy the contract and then open this section 
+
+![Screenshot from 2022-08-24 13-36-37](https://user-images.githubusercontent.com/95926324/186368424-20295960-f42a-4ff5-9e9b-984086f270fe.png)
+
+Click on check balance to check your contract balance, It will show 0 for now.
+
+2> Go to
+
+![Screenshot from 2022-08-24 13-41-20](https://user-images.githubusercontent.com/95926324/186368530-b74551f0-073d-4e79-8dc7-c79be8020345.png)
+
+select the value to 10 and come down and select the payether function
+This shall pay 10 ethers to your smart contract.
+
+3> Now, checkbalance you will notice that now It says 10 ethers. Which is great lets move on.
+Select another account now like this -> 
+![Screenshot from 2022-08-24 13-43-42](https://user-images.githubusercontent.com/95926324/186368582-d4912d60-6796-4c6f-bb79-5cbb0feee437.png)
+
+and you can replace this by the one declared as friend address in the contract just to verify :)
+
+4> Now click on -> 
+
+![Screenshot from 2022-08-24 13-45-05](https://user-images.githubusercontent.com/95926324/186368642-86059fd2-5a95-45ce-bcce-97be43c9d18a.png)
+
+This shall transfer 5 ethers out of 10 from your contract to your choosen account and you shall have something like this in the transaction status.
+![Screenshot from 2022-08-24 13-47-39](https://user-images.githubusercontent.com/95926324/186368727-f47e40f5-c1fa-4801-981c-357dbdb974ea.png)
+
+
+
+
 
 
 

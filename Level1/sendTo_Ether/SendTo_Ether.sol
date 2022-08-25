@@ -2,24 +2,24 @@
 
 pragma solidity >=0.7.0 <0.9.0;
 
-contract sendEther{
-    // any address to whom u want to send the faucet
-    address payable user = payable(0xfbb83C2a1192dDf082d231b430052B195aCB6aED);
+contract kamal{
 
-    function payto_contract() payable public{
+    address payable friend = payable(0x02Ea6a1368d7E6B10462BfB996Df55f4DA67B75a);
+    //this address can be taken from remix IDE (another acc address).
+    
+    function payether() public payable{}
+    //payether function pays to the smart contract based on the time of deployment.
+
+    function checkbalance() view public returns(uint){
+        return address(this).balance/ 1 ether;
+        //converting Wei to ether for code readability.
     }
+    //checks the balance of smart contract.
 
-    function fetchbalance() view public returns(uint){
-        return address(this).balance;
-    } 
-
-
-    function getaddress() view  public returns(address){
-        return user;
+    function payethertoacc() public{
+        friend.transfer(5 ether);
     }
-
-    function send1() public  {
-        user.transfer(3 ether);
-    }
-
+    //to transfer ether to another account.
 }
+
+
