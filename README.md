@@ -29,10 +29,11 @@
 
 ### This project is a part of following Open Source Programs</h2>
 
-<div align="center">
+<div align="center" >
 
-<img src="./Images/Hsoc22Logo.jpg" width="20%" height="20%">
-  
+ <img src="./Images/Hsoc22Logo.jpg" width="20%" height="20%">
+ &nbsp; &nbsp; &nbsp;
+ <img src="./Images/ssoc22.jpg" style=" width:203px ; height:203px " >  
 </div>
 
 ##  About Solidity-Pathshala
