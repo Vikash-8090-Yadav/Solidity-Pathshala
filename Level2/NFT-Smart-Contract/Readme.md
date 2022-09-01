@@ -7,9 +7,9 @@
 Funtions in the smart contract:-
 - Approves:- it approves another address to transfer the given token ID The zero address indicates there is no approved address. There can only be one approved address per token at a given time. Can only be called by the token owner or an approved operator.
  
--MintNFT :- allows user to mint nft take the address of the user and takes the token id i.e the token address which tells us which token is being minted. Reverts if the given token ID already exists.
+- MintNFT :- allows user to mint nft take the address of the user and takes the token id i.e the token address which tells us which token is being minted. Reverts if    the given token ID already exists.
 
--safeTransferFrom :- Transfers a specific NFT (tokenId) from one account  to another.
+- safeTransferFrom :- Transfers a specific NFT (tokenId) from one account  to another.
 
 - setApprove:- Sets or unsets the approval of a given operator An operator is allowed to transfer a tokens of the sender on their behalf.
 
@@ -25,8 +25,8 @@ Funtions in the smart contract:-
 
 - ownerOf:- The purpose of this function is to return the address of the owner of a token. ERC721 token is referenced on the blockchain network via a unique ID. Using this ID we can determine the owner of a token
 
--supportsInterface :- Returns true if this contract implements the interface defined by interfaceId.
+- supportsInterface :- Returns true if this contract implements the interface defined by interfaceId.
 
--symbol :- Tells the symbol of our token ( The symbol of the token which we passed in our constructor)
+- symbol :- Tells the symbol of our token ( The symbol of the token which we passed in our constructor)
 
--tokenURI :-Returns the URI for a given token ID.
+- tokenURI :-Returns the URI for a given token ID.
