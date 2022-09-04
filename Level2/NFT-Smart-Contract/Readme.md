@@ -31,7 +31,7 @@ Funtions in the smart contract:-
 
 - tokenURI :-Returns the URI for a given token ID.
 
-A video of me running the important function (Note:- 1st Account starts with 0x5B8 ,2nd Account starts with 0xAb8)
+## A video of me running the important function (Note:- 1st Account starts with 0x5B8, 2nd Account starts with 0xAb8)
 
 
 https://user-images.githubusercontent.com/95535448/188207166-562f206d-f272-4209-941e-ff1b8f730aae.mp4
