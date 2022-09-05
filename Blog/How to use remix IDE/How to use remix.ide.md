@@ -39,3 +39,8 @@ We can see the ouput below the function name.
 
 ![output main](https://user-images.githubusercontent.com/95535448/188327607-21c3b977-0cf1-4d41-81b4-503fc385f4b4.png)
  
+### Working of a smart contract
+
+
+https://user-images.githubusercontent.com/95535448/188427582-a9540a5e-510e-47a7-9153-6b5e054dabcf.mp4
+
