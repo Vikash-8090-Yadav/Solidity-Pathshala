@@ -42,5 +42,9 @@ We can see the ouput below the function name.
 ### Working of a smart contract
 
 
-https://user-images.githubusercontent.com/95535448/188427582-a9540a5e-510e-47a7-9153-6b5e054dabcf.mp4
+
+https://user-images.githubusercontent.com/95535448/188429316-64fd90b0-8ea4-4540-b25a-770853dcb1a3.mp4
+
+
+
 
