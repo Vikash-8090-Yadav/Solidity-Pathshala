@@ -44,9 +44,24 @@ We can see that we are using a function without implementation so in that case w
 
 Whenever we are making an abstract contract and that abstract contract has a function without implementation we have to mark that fucntion as virtual.
 
-7) Now let's have a look at our abstract contract which has fewer modifications in its function
+7) Error 3:-
+
+![error3](https://user-images.githubusercontent.com/95535448/188617806-99676586-7a7f-43b6-aebd-646057e0a738.png)
+
+- If the derived contract is also not implementing the incomplete functions then that derived contract will be marked as abstract. 
+- So basically we can solve this issue just by adding abstract. But we will use a different way 
+
+8) Editing Child contract
+
+If we implement the parent function inside the child function and add override keyword , our issue will be resolved.
+
+#### Brief about Override
+- Solidity lets developers change how a function in the parent contract is implemented in the derived class. This is known as function overriding.
+- The function in the parent contract needs to be declared with the keyword virtual to indicate that it can be overridden in the deriving contract.
+
+#### Now lets see our contract 
 
 
-
+![fina](https://user-images.githubusercontent.com/95535448/188623034-e98075a4-c7de-45e6-936a-8ac5850bcf24.png)
 
 
