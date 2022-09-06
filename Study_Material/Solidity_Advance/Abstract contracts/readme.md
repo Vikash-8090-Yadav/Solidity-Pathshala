@@ -38,7 +38,7 @@ Now, we are using a function which does not have any implementation in the paren
 
 We can see that we are using a function without implementation so in that case we have to make that contract an abstract contract.
 
-6) Error 2
+6) Error 2:-
 
 ![error2](https://user-images.githubusercontent.com/95535448/188614705-3b164fd7-fd91-4888-bb37-2fe9def70887.png)
 
