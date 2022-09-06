@@ -30,19 +30,21 @@ You can see the child contract inherites the parent contracts, you can check it 
 
 ![after funk](https://user-images.githubusercontent.com/95535448/188609756-6c63ca62-74dc-43f7-b83f-da2fa63e4456.png)
 
-Now, we are using a function which does not have any implementation in the parent contract , lets to compile it 
+Now, we are using a function which does not have any implementation in the parent contract , lets to compile it.
+
+Aftwe compiling we will notice three major erros:-
 
 5) Error 1:-
 
 ![error](https://user-images.githubusercontent.com/95535448/188612054-d1b70c29-650e-4b44-9162-a5234668a9e6.png)
 
-We can see that we are using a function without implementation so in that case we have to make that contract an abstract contract.
+We can see that we are using a function without implementation so in that case we have to make that contract an **abstract** contract.
 
 6) Error 2:-
 
 ![error2](https://user-images.githubusercontent.com/95535448/188614705-3b164fd7-fd91-4888-bb37-2fe9def70887.png)
 
-Whenever we are making an abstract contract and that abstract contract has a function without implementation we have to mark that fucntion as virtual.
+Whenever we are making an abstract contract and that abstract contract has a function without implementation we have to mark that fucntion as **virtual**.
 
 7) Error 3:-
 
@@ -53,9 +55,12 @@ Whenever we are making an abstract contract and that abstract contract has a fun
 
 8) Editing Child contract
 
-If we implement the parent function inside the child function and add override keyword , our issue will be resolved.
+If we implement the parent function inside the child function and add **override** keyword , our issue will be resolved.
 
-#### Brief about Override
+![impli](https://user-images.githubusercontent.com/95535448/188623593-ba3e787f-4586-431b-b62e-d240643a31ae.png)
+
+#### Few points about Override 
+
 - Solidity lets developers change how a function in the parent contract is implemented in the derived class. This is known as function overriding.
 - The function in the parent contract needs to be declared with the keyword virtual to indicate that it can be overridden in the deriving contract.
 
