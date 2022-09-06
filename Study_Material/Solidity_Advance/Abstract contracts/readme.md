@@ -30,9 +30,9 @@ You can see the child contract inherites the parent contracts, you can check it 
 
 ![after funk](https://user-images.githubusercontent.com/95535448/188609756-6c63ca62-74dc-43f7-b83f-da2fa63e4456.png)
 
-Now, we are using a function which does not have any implementation in the parent contract , lets to compile it.
+Now, we are using a function which does not have any implementation in the parent contract , lets  compile it.
 
-Aftwe compiling we will notice three major erros:-
+After compiling we will notice three major errors:-
 
 5) Error 1:-
 
