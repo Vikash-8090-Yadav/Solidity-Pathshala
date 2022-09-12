@@ -39,7 +39,7 @@
 
 ##  About Solidity-Pathshala
 
-The one place for the smart contract developer to showcase their ideas and code .This repo will have all the smart contract written in the remix ide .It contains all the source code with  the screen shot.
+The one place for smart contract developers to showcase their ideas and code. This repo will have all the smart contract written in the remix IDE. It contains all the source code with the screen shot.
   
 ## How to Contribute?
 
