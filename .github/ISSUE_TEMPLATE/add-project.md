@@ -7,7 +7,6 @@ assignees: ''
 
 ---
 
-
 ### Project title
 (Write project title over here)
 
