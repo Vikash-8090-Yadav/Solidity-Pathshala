@@ -1,0 +1,1 @@
+This contract we can book an hotelroom by paying come ether , it has a book function to book the room and a currentStatus function which shows the status of the hotelROOm and the owner function which tells about who is the owner of the room (in our case its the depolyer)
