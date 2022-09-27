@@ -6,7 +6,7 @@ contract vote{
     address public  participant1 = 0xAb8483F64d9C6d1EcF9b849Ae677dD3315835cb2; 
     address public  participant2 = 0x4B20993Bc481177ec7E8f571ceCaE8A9e22C02db;
     mapping(address=>uint) user;
-    mapping(address=>bool) chek;
+    mapping(address=>bool) check;
 
     address public owner;
     constructor(){
@@ -20,15 +20,15 @@ contract vote{
 
     function participant1_vote()  public {
         require(msg.sender !=participant1,"You can not vote to yourself");
-        require(chek[msg.sender]!=true,"You have already voted");
+        require(check[msg.sender]!=true,"You have already voted");
         user[participant1]++;
-        chek[msg.sender] = true; 
+        check[msg.sender] = true; 
     }
         function participant2_vote()  public {
         require(msg.sender !=participant2,"You can not vote to yourself");
-        require(chek[msg.sender]!=true,"You have already voted");
+        require(check[msg.sender]!=true,"You have already voted");
         user[participant2]+=1;
-        chek[msg.sender] = true; 
+        check[msg.sender] = true; 
     }
 
     function pati1_cnt_VOTE() view public onlyonwner returns(uint){
