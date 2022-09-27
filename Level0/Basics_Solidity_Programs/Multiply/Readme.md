@@ -1,0 +1,1 @@
+Basic program using the * ( Multiplying operator) and returning product of two numbers on the console
