@@ -14,6 +14,4 @@ A basic student attendance system made with Solidity.
  4 . showStudent() this will show the details of the student u want to see a/c to their index
  
  ### Sreenshot of the Programme, 
- 
- 
-![Screenshot from 2022-09-29 18-15-14](https://user-images.githubusercontent.com/105157723/193347333-45c14e3e-3785-481b-9691-3351f64f53f8.png)
+ ![Screenshot from 2022-10-01 01-31-22](https://user-images.githubusercontent.com/105157723/193347605-2bfa1c78-37cf-4e57-adce-38935e54ce64.png)
