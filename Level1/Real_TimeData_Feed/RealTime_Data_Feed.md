@@ -26,3 +26,25 @@ For more you can read  https://docs.chain.link/docs/architecture-decentralized-m
 
 ## Code 
 
+![datafeed](https://user-images.githubusercontent.com/105157723/193408555-ec04ace6-04c5-4ec9-8b45-eb457cece95a.png)
+
+## Working
+
+The above code is written in the remix ide , lets understand the line by line code of this .
+
+Note : If u don't know how to use Remix ide  you can read this https://github.com/Vikash-8090-Yadav/Solidity-Pathshala/blob/main/Blog/How%20to%20use%20remix%20IDE/How%20to%20use%20remix.ide.md
+
+and if u are not familiar with the solidity then read from here https://github.com/Vikash-8090-Yadav/Solidity-Pathshala/tree/main/Study_Material
+
+ In the above code I am importing **AggregatorV3Interface.sol**    
+
+**An aggregator is the contract that receives periodic data updates from the oracle network. Aggregators store aggregated data on-chain so that consumers can retrieve it and and act upon it within the same transaction.   Which define the external functions implemented by Data Feeds.**
+
+and then  in the **contrcutor** i am passing the address of the contract where the ET/USD deployed  , remember in this we can't pass our own address beacuse this code on chainlink provide the real data of the assets which is already deployed with this  address  passed in the constructor . 
+
+By **getLatestPrice( )** function we can get  the lastest value of the ETH/USD in the  integer form  . By using the latestRoundData( ) function which is the method of the AggreatorV3Interface.sol . 
+
+When you deployed the code and click on the getLatestPrice  you can see the latest value of the ETH/USD
+
+#### You can see on the left side below  , getLatestPrice  -> 0:int256: 114068290588
+
