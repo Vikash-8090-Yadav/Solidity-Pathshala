@@ -58,7 +58,7 @@ contract Faucet {
     }
 
     function setLockTime(uint256 amount) public onlyOwner {
-        lockTime = amount * 5 minutes;
+        lockTime = amount * 1 minutes;
     }
 
     function withdraw() external onlyOwner {
