@@ -20,20 +20,22 @@ Type the file name and enter the respective code into it.
 
 ### Step 2:
 
-Now compile the ReversingDigits.sol file,
+Now compile the Calculator.sol file,
+
+![Cal compile](https://user-images.githubusercontent.com/81668653/193393760-93f66a72-09ee-4012-bfa8-d576d52a733a.png)
 
 ### Step 3:
 
 Once compiled successfully, click “Deploy and run transactions”. and "Deploy" it ,
 
-![rev deploy](https://user-images.githubusercontent.com/73381366/183279762-3dd90fae-4d99-4f34-b830-0f7f2dbcee86.jpg)
+![Cal deploy](https://user-images.githubusercontent.com/81668653/193393795-a378ff2a-933f-4e5b-a3be-0edf52ddc8c4.png)
 
 ### Step 4:
 
-Click “>” before your contract you will see a button reverseDigit below as the contract has reverseDigit function that returns the reverse of the number.
+Click “>” before your contract you will see a button Calculator below as the contract has addition,multiplication,division and substractiono function that returns the ans of the number in getans.
 
-Enter a number and click the reverseDigit button and you will get the output :
+Enter a two numbers and click the function whatever you want button and you will get the output in getans:
 
-![rev output](https://user-images.githubusercontent.com/73381366/183279767-89b0b776-63dd-42a0-b959-bb64b13aad61.jpg)
+![image](https://user-images.githubusercontent.com/81668653/193393870-0e8e589f-191b-400c-b696-4fe559d6cbf2.png)
 
 Now, we have successfully run the another smart contract in solidity.
