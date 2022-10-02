@@ -2,7 +2,7 @@
 # <p align = "center"> Solidity-Pathshala </p>
 <br>
 
-<img src ="https://user-images.githubusercontent.com/85225156/171922224-4eebf0b7-619d-4120-838f-afe105132d39.png" width = "1050"  height ="540">
+<img src ="https://user-images.githubusercontent.com/85225156/171922224-4eebf0b7-619d-4120-838f-afe105132d39.png" width = "100%">
 <br>
 
  <div align="center">
@@ -32,9 +32,9 @@
 
 <div align="center" >
 
- <img src="./Images/Hsoc22Logo.jpg" width="20%" height="20%">
+ <img src="./Images/Hsoc22Logo.png" width="20%">
  &nbsp; &nbsp; &nbsp;
- <img src="./Images/ssoc22.jpg" style=" width:203px ; height:203px " >  
+ <img src="./Images/ssoc22.png" width="20%">  
 </div>
 
 ##  About Solidity-Pathshala
