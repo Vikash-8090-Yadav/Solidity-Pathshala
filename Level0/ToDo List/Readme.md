@@ -1,4 +1,4 @@
-# Smart Contract "Reversing Digits" in Remix-IDE
+# Smart Contract "ToDo List" in Remix-IDE
 
 Smart contracts are contracts that execute themselves. The Remix is an Integrated Development Environment (IDE) for creating smart contracts in Solidity. The Solidity code can be written, compiled, and debugged using the IDE.
 
@@ -20,22 +20,23 @@ Type the file name and enter the respective code into it.
 
 ### Step 2:
 
-Now compile the Calculator.sol file,
+Now compile the todo.sol file,
 
-![Cal compile](https://user-images.githubusercontent.com/81668653/193393760-93f66a72-09ee-4012-bfa8-d576d52a733a.png)
+![Compile](https://user-images.githubusercontent.com/81668653/193433345-d693e0b3-f541-433b-9d90-0b4e946d4405.png)
 
 ### Step 3:
 
 Once compiled successfully, click “Deploy and run transactions”. and "Deploy" it ,
 
-![Cal deploy](https://user-images.githubusercontent.com/81668653/193393795-a378ff2a-933f-4e5b-a3be-0edf52ddc8c4.png)
+![Deploy](https://user-images.githubusercontent.com/81668653/193433354-eb71ca30-6577-4fba-b8f8-07a1a5a4f919.png)
 
 ### Step 4:
 
-Click “>” before your contract you will see a button Calculator below as the contract has addition,multiplication,division and substractiono function that returns the ans of the number in getans.
+Click “>” before your contract you will see a button todolist below as the contract has addTodo, completeTodo, removeTodo, uncompleteTodo and getAllTodos function that returns the all todo list in getAllTodos.
 
-Enter a two numbers and click the function whatever you want button and you will get the output in getans:
+Enter Whatever tasks you want, click the functions that correspond to your tasks, and you'll get the following output in getAllTodos:
 
-![image](https://user-images.githubusercontent.com/81668653/193393870-0e8e589f-191b-400c-b696-4fe559d6cbf2.png)
+![Deployed](https://user-images.githubusercontent.com/81668653/193433422-fc246b10-e016-48f2-93d1-930363584f8b.png)
+
 
 Now, we have successfully run the another smart contract in solidity.
