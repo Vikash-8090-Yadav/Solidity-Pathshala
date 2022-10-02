@@ -1,4 +1,4 @@
-# Smart Contract "Reversing Digits" in Remix-IDE
+# Smart Contract "Calculator" in Remix-IDE
 
 Smart contracts are contracts that execute themselves. The Remix is an Integrated Development Environment (IDE) for creating smart contracts in Solidity. The Solidity code can be written, compiled, and debugged using the IDE.
 
