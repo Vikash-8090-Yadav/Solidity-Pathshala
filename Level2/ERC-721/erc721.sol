@@ -3,14 +3,14 @@
 pragma solidity ^0.8.7;
 import "@openzeppelin/contracts/token/ERC721/ERC721.sol";
 
-contract NFT is ERC721 {
+contract MyNFT is ERC721 {
     uint256 private s_tokenIdCounter;
 
     // Event to be emitted when nft minted
     event CreatedNFT(uint256 indexed tokenId);
 
     // ERC721 is like the super class which we inherit to use all its properties and methods
-    constructor() ERC721("NFT", "Img") {
+    constructor() ERC721("MyNFT", "Square") {
         s_tokenIdCounter = 0;
     }
 
