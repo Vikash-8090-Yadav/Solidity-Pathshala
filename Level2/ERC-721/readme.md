@@ -5,7 +5,7 @@
 It is a simple ERC721 token.
 It have a common TokenURI for all minted tokens.
 It uses text based svg as token image.
-Name of token is NFT and it's symbol is Img.
+Name of token is MyNFT and it's symbol is Square.
 
 ## How this is build
 
@@ -55,5 +55,7 @@ To run it, we just have to copy the smart contract into [Remix ide](https://remi
 ## Output Screenshots:-
 
 ![Screenshot 2022-10-02 191644](https://user-images.githubusercontent.com/95535448/193457399-1ddd16cd-573f-47cf-a1b9-b9cfc1573f06.png)
+
+https://user-images.githubusercontent.com/95535448/188207166-562f206d-f272-4209-941e-ff1b8f730aae.mp4
 
 
