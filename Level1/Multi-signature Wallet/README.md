@@ -21,3 +21,11 @@ Also Pragma specifies the version of Solidity used.
 - <code>execute</code>: function that runs when the required number of users has approved the transaction to transfer the tokens to the designated address.
 
 - <code>revoke</code>: function that is used to cancel a transaction after it has been approved by the users in case of an urgency, before the transaction gets executed.
+
+
+## Live running view
+
+
+
+https://user-images.githubusercontent.com/74231771/193506163-d78198f7-afda-4fa6-830b-6793c237c65e.mp4
+
