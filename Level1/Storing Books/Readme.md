@@ -1,4 +1,7 @@
 # Storing Books Smart Contract 
+
+This is a smart contract where user can keep records of the books that he reads. It will store the details about the book in an array of datatype "Book". Whenever the user wants, he can retrieve details about the book using the book's id.
+
 A basic library kind of system made with Solidity.
 This will store the details of the books when the details like:
 * Book ID
