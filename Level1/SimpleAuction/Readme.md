@@ -18,7 +18,7 @@ Users allows to bid and withdraw on this smart contract
   ![Screenshot from 2022-10-01 01-31-22](https://user-images.githubusercontent.com/55663050/194279366-609676c3-ed12-427a-9044-7032bb233b8c.png)
   
  ## Bidding and higest bidding amount and highest bidder address
-  ![Screenshot from 2022-10-01 01-31-22](https://user-images.githubusercontent.com/55663050/194279020-c01c5332-27dd-4e6e-ad4b-aad938812746.png)
+  ![Screenshot from 2022-10-01 01-31-22](https://user-images.githubusercontent.com/55663050/194279751-588495ac-5943-4fd8-a71e-9c34facd6e4a.png)
  
  
  
