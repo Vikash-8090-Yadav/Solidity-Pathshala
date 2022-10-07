@@ -32,3 +32,9 @@ Try out the different transactions from the interface provided by Remix IDE
 5) Get Total Polls : Get the total number of polls present on the contract.
 
 ![image](https://user-images.githubusercontent.com/51871759/194523526-93181227-4e14-42a9-8438-5ecebb53cf52.png)
+
+## Video Walkthrough
+
+https://user-images.githubusercontent.com/51871759/194672388-c4c480fa-d972-4c69-9f1b-f6c5f312eceb.mp4
+
+
