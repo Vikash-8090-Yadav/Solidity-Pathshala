@@ -7,7 +7,7 @@ contract PollContract{
         uint256 id;
         string question;
         uint64[] results;
-        bytes32[] options;
+        string[] options;
     }
     struct VoterData{
         uint256[] votedIds;
@@ -20,7 +20,7 @@ contract PollContract{
     event PollCreated(uint256 _pollId);
     
     
-    function createPoll(string memory _question, bytes32[] memory _options) public {
+    function createPoll(string memory _question, string[] memory _options) public {
         require(bytes(_question).length > 0, "Question required");
         require(_options.length > 1, "Minimum two options required");
         
@@ -35,7 +35,7 @@ contract PollContract{
         emit PollCreated(newId);
     }
     
-    function getPoll(uint256 pollId) external view returns(uint256, string memory, uint64[] memory, bytes32[] memory){
+    function getPoll(uint256 pollId) external view returns(uint256, string memory, uint64[] memory, string[] memory){
         require(pollId < polls.length, "Poll does not exist");
         return (
             polls[pollId].id,
