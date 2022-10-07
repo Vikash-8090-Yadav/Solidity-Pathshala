@@ -7,5 +7,5 @@
 Funtions in the smart contract
 - addBook: Allows users to add a book i.e add its name , author name and its title.  
 - setFinished: It sets the book as finised so that we can know the status of the book (finished or unfinished).
-- getFinished: This function shows the properties of the book if it is set as finished 
-- getUnfinsied: This function shows the properties of the book if it is set as unfinished 
+- getFinished: This function shows the properties of the book if it is set as finished.
+- getUnfinsied: This function shows the properties of the book if it is set as unfinished .
