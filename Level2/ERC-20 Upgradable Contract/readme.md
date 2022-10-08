@@ -10,6 +10,8 @@ But, what are upgradable smart contracts? First off, you should be aware that th
 
 This project will look at the creation and execution of tests for upgradeable ERC-20 contracts.
 
+To Watch the Video Version go [here](#video-version)
+
 ---
 
 ## What is an Upgradable Contract
@@ -471,3 +473,13 @@ await contract.mint(
 ---
 
 This explains how to use the OpenZeppelin Upgradable Smart Contract Library to upgrade contracts to the same contract address in order to fix errors and add new features to an already-deployed smart contract.
+
+---
+
+## Video Version
+
+<br>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0;"><iframe src="https://www.loom.com/embed/7991ae02bb724380bf4d46ad7f235cb6" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
+
+---
