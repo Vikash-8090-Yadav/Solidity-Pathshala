@@ -52,4 +52,3 @@ contract StudentAttendance {
             students[_address].isReg
         );
     }
-}
