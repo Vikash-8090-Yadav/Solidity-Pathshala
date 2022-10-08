@@ -1,6 +1,16 @@
+# ERC-20 Upgradable Smart Contract
+
+## About this Project
+
 Normally, when we deploy smart contracts on the blockchain, it is impossible to edit the code deployed. And it should be totally fine that way. The fact that it could not be deployed to replace the existing codes means that that particular contract can not be modified afterward. (this increase safety of people who interact with that contract)
 
 Immutability comes with the drawback that bugs will not be fixed, gas optimizations won’t be implemented, existing functionality will not be improved
+
+But, what are upgradable smart contracts? First off, you should be aware that the word "upgradable" in this context does not imply mutable. One of the fundamental tenets of EVM is that a contract cannot be altered once it has been deployed. An upgradeable smart contract, on the other hand, employs a unique proxy pattern. The latter entails implementing implementation contracts and proxy contracts (logic contracts)
+
+This project will look at the creation and execution of tests for upgradeable ERC-20 contracts.
+
+You can find video version of this project [here]()
 
 ---
 
