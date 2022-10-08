@@ -12,4 +12,13 @@ A basic Timer Smart Contract
  2. end() function is used to take the time from the user and and set the end time. 
  3. TimeLeft() function is used to return the how much time left .
  
- ### Sreenshot of the Programme, 
+ ### Sreenshot of the Programme,
+ Compilation
+ ![Screenshot from 2022-10-01 01-31-22] (https://user-images.githubusercontent.com/55663050/194719345-72102db6-973a-4f65-b2fd-74296f681564.png)
+ 
+ Deploy
+ ![Screenshot from 2022-10-01 01-31-22] (https://user-images.githubusercontent.com/55663050/194719454-834cafa5-3c0f-4336-abf9-57832a40849b.png)
+ 
+ Calling functions
+ ![Screenshot from 2022-10-01 01-31-22] (https://user-images.githubusercontent.com/55663050/194719474-b04597ae-3b55-474f-9e4a-acf3bae39d51.png)
+ 
