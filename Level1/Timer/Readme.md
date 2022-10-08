@@ -13,6 +13,10 @@ A basic Timer Smart Contract
  2. end() function is used to take the time from the user and and set the end time. 
  3. TimeLeft() function is used to return the how much time left .
  
+ # Note : If u don't know how to use Remix ide you can read this https://github.com/Vikash-8090-Yadav/Solidity-Pathshala/blob/main/Blog/How%20to%20use%20remix%20IDE/How%20to%20use%20remix.ide.md
+ 
+ # and if u are not familiar with the solidity then read from here https://github.com/Vikash-8090-Yadav/Solidity-Pathshala/tree/main/Study_Material
+ 
  ### Sreenshot of the Programme,
  Compilation
  
