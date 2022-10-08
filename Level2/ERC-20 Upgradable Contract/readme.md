@@ -480,6 +480,6 @@ This explains how to use the OpenZeppelin Upgradable Smart Contract Library to u
 
 <br>
 
-<div style="position: relative; padding-bottom: 56.25%; height: 0;"><iframe src="https://www.loom.com/embed/7991ae02bb724380bf4d46ad7f235cb6" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
+https://user-images.githubusercontent.com/65389981/194726748-231107e0-ff94-458f-9890-7b5c3aa4bb8c.mp4
 
 ---
