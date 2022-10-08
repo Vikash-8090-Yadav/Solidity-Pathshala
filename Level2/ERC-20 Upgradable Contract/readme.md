@@ -10,8 +10,6 @@ But, what are upgradable smart contracts? First off, you should be aware that th
 
 This project will look at the creation and execution of tests for upgradeable ERC-20 contracts.
 
-You can find video version of this project [here]()
-
 ---
 
 ## What is an Upgradable Contract
@@ -78,7 +76,31 @@ Here we have installed the dependency `dotenv` which will be used to access secr
 
 ---
 
-### **Step 2: Setup Hardhat config**
+### **Step 2: Get Alchemy Credentials**
+
+We must connect Hardhat to the Polygon Mumbai Testnet with RPC credentials in order to deploy our Contracts there. The following features of Alchemy are beneficial. You must have an Alchemy Account to begin using the programme. If you don't already have one, you can quickly create one. Creating an account with Alchemy is easy, [sign up for free here](https://dashboard.alchemyapi.io/signup/).
+
+<img src="https://i.ibb.co/hZpxZPJ/signup.png" width="400px" />
+
+<br>
+
+Now it is time to Create an Alchemy app. To use Alchemy’s products, you need an API key to authenticate your requests. You can create API keys from the [dashboard](https://dashboard.alchemy.com/). To make a new key, navigate to “+ CREATE APP” as shown below:
+
+<img src="https://i.ibb.co/r5Hdfq8/create-app.png" width="800px" />
+
+Fill in the details under “CREATE APP” and click on Create App. In this case we will be using Polygon Chain and Mumbai Network. You can also see apps you previously made and those made by your team here. Pull existing keys by clicking on “View Key” for any app.
+
+Once You app is created you can view you `RCP_URL` and `API_Key` by clicking the View Key Button.
+
+<img src="https://i.ibb.co/hKzhHBQ/key.png" width="400px" />
+
+<br>
+
+The link under the `HTTPS` heading is your `RPC_URL`.
+
+---
+
+### **Step 3: Setup Hardhat config**
 
 Create a new file called `.env` in your project root and add the following details.
 
@@ -114,7 +136,7 @@ Here, we merely initialise a basic boilerplate that hardhat may utilise to get t
 
 ---
 
-### **Step 3: Create a new ERC20 Upgradable Contract.**
+### **Step 4: Create a new ERC20 Upgradable Contract.**
 
 Open the `Contracts` Folder and create a new file called `ERC20UpgradeableV1.sol`.
 
@@ -177,7 +199,7 @@ The above ERC-20 contract is a normal contract with `mint`,`pause` and `burn` pr
 
 ---
 
-### **Step 4: Deploy Contract.**
+### **Step 5: Deploy Contract.**
 
 Now is the time to write our deploy Script.
 For this we use [deployProxy](https://docs.openzeppelin.com/upgrades-plugins/1.x/api-hardhat-upgrades#deploy-proxy) function instead of normal deploy function.
@@ -221,7 +243,7 @@ Take note of the deployed contract address, it will be useful for testing our sm
 
 ---
 
-### **Step 5: Testing Contract**
+### **Step 6: Testing Contract**
 
 Now we have to test our smart contract so in terminal run
 
@@ -237,7 +259,7 @@ Let's now use the following command to initialise a new variable with our `ERC20
 const Contract = await ethers.getContractFactory("ERC20UpgradableV1");
 ```
 
-We now connect the deployed contract to the initialised variable mentioned earlier. The deployed contract address is completed in step 4 and is what you will require.
+We now connect the deployed contract to the initialised variable mentioned earlier. The deployed contract address is completed in step 5 and is what you will require.
 
 ```js
 const contract = await Contract.attach(
@@ -266,7 +288,7 @@ You can checck your metamask wallet to see if the token have arrived. It may tak
 
 ---
 
-### **Step 6: Create a V2 Contract**
+### **Step 7: Create a V2 Contract**
 
 Let's imagine we now wish to add a new feature to our contract, say `"whitelist"` On a conventional contract, we would not be able to modify the code, but on an upgradeable contract, we could simply direct calls to another implementation contract through the proxy contract.
 
@@ -339,7 +361,7 @@ We utilise the `verifyUser` Function in our `mint` function to check whether the
 
 ---
 
-### **Step 7: Upgrading the Contract**
+### **Step 8: Upgrading the Contract**
 
 Make a new file called `upgrade.js` in the scripts folder and add the following code to it.
 
@@ -378,7 +400,7 @@ Let's do some tests now that the Contract has successfully been upgraded and whi
 
 ---
 
-### **Step 8: Running Tests for Upgraded Contract**
+### **Step 9: Running Tests for Upgraded Contract**
 
 We must now connect to the Hardhat Mumbai console, initialise our smart contract, and attach the contract address before we can test it.
 
