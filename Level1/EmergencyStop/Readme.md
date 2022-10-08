@@ -1,7 +1,9 @@
 # Smart Contract "emergency stop"
 
-#### A library smart contract which allows us to add a book( we can add the name of the book, its year and its author name) to our smart contract and we can set its status too as finished or unfinished.
-![ss22](https://user-images.githubusercontent.com/95535448/194481504-a36d3dc9-d572-4b72-a8f7-41ee62803dfa.png)
+#### a emergency stop can stop the contract immediately whenever he wants or he found some illegal things.
+
+![Screenshot (103)](https://user-images.githubusercontent.com/92226747/194720727-f9c743d5-316a-4d8c-a4cb-1e69b7f6ac21.png)
+
 
 
 Funtions in the smart contract
