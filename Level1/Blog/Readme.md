@@ -1,11 +1,12 @@
-# Smart Contract "Library"
+# Smart Contract "Blog"
 
-#### A library smart contract which allows us to add a book( we can add the name of the book, its year and its author name) to our smart contract and we can set its status too as finished or unfinished.
-![ss22](https://user-images.githubusercontent.com/95535448/194481504-a36d3dc9-d572-4b72-a8f7-41ee62803dfa.png)
+#### A blog smart contract which allows users to create a blog and make posts to that blog . We can also create new posts and update them.
+![blog](https://user-images.githubusercontent.com/95535448/194917369-d0b9f8cf-f787-4ce5-969c-92e08576a528.png)
 
 
 Funtions in the smart contract
-- addBook: Allows users to add a book i.e add its name , author name and its title.  
-- setFinished: It sets the book as finised so that we can know the status of the book (finished or unfinished).
-- getFinished: This function shows the properties of the book if it is set as finished.
-- getUnfinsied: This function shows the properties of the book if it is set as unfinished .
+- createPost:- Allows user to create a post.  
+- TransferOwnership:- Allows user to change the ownership of the contract ( to transfer the ownership we need to a new address to which we want to transfer the      ownership).
+- updateName:- updateName allows us to just simply update our name.
+- updatePost:- This function allows us to  to update the post( updating title, hash, id etc).
+- getPosts:- This function will show us all the data we have saved in our post.
