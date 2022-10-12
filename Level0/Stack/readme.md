@@ -3,6 +3,9 @@
 ## Stack
 Stack is a linear data structure which follows a particular order in which the operations are performed. The order may be LIFO(Last In First Out) or FILO(First In Last Out). Stacks are used to implement functions, parsers, expression evaluation, and backtracking algorithms.
 
+![image](https://user-images.githubusercontent.com/91687682/195245641-e7755059-3f2e-4921-861a-c44cd6571d98.png)
+
+
 ## Smart Contracts
 Smart contracts are contracts that execute themselves. The Remix is an Integrated Development Environment (IDE) for creating smart contracts in Solidity. The Solidity code can be written, compiled, and debugged using the IDE.
 
