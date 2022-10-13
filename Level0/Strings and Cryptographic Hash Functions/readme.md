@@ -21,7 +21,7 @@ string stringName = new string(value);
 Let’s see an example of Strings in Solidity:
 
 ```solidity
-pragma solidity ^0.5.0;
+pragma solidity ^0.8.7;
 
 contract SolidityStrings {
   // using double quotes
