@@ -8,18 +8,19 @@ This contract Seller of NFT deploys this contract setting a starting price for t
 
 ## Functions and there uses :-
 
-- <code>buy</code>: function which will run only once when the contract is being deployed. It has two parameters which takes addresses of the owners and set the number of owners that are required in order to do a transaction.
+- <code>buy</code>: function allow us to buy the nft.
 
-- <code>expiresAt</code>: function to receive ethers from other wallets.
+- <code>expiresAt</code>: function tells us the time at which auction will expire.
 
-- <code>nft</code>: function that runs whenever a transaction needs to be made, it sends the application to all the users to give there approval in order to do a transaction.
+- <code>nft</code>: function tells us the address of the nft.
 
-- <code>nftId</code>: function that runs whenever the users needs to approve there transactions.
+- <code>nftId</code>: function tells us the Id of the nft(which was assigned to it at the starting of the auction).
 
-- <code>Seller</code>: function that gives the count of the number of users that has approved a transaction.
+- <code>Seller</code>: function tells us the address of the seller.
 
-- <code>StartAt</code>: function that runs when the required number of users has approved the transaction to transfer the tokens to the designated address.
+- <code>StartAt</code>: function tell us the time at which auction will start.
 
-- <code>StartingPrice</code>: function that is used to cancel a transaction after it has been approved by the users in case of an urgency, before the transaction gets executed.
-- <code>Winner</code>: function that is used to cancel a transaction after it has been approved by the users in case of an urgency, before the transaction gets executed.
+- <code>StartingPrice</code>: function tells us the starting price of the product(nft) which was decided at the starting of the auction.
+- 
+- <code>Winner</code>: function tell us the address of the auction winner.
 
