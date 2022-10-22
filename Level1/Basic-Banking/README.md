@@ -20,7 +20,12 @@ Transfer Amount
 Send Amount to wallet
 </li>
 
-## Basic function used 
+# code 
+![Screenshot from 2022-10-22 18-02-45](https://user-images.githubusercontent.com/105157723/197339212-0dcefb62-f760-41bf-bd95-a4d09dfe2c5a.png)
+
+
+
+# Basic function used 
 
 
 ## First need to add solidity compiler version
