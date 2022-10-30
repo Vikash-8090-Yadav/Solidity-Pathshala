@@ -1,5 +1,27 @@
 # Decentralized Bingo Game
 
+## What is Bingo
+
+Bingo is a fun game of chance that anyone can play. The game is played on a scorecard that's made up of 25 squares — if you get 5 squares in a row, you win!
+A random number is called out at each round which gets stricken out at the players card. Ussualy a host is responsible for carrying out this task.
+
+## My Take
+
+I wanted there to be no 'Host'. Following method was deviced,
+- The consists of rounds
+- each round a player is assigned the master role,
+- all the players vote for which number should be stricked out,
+- In case of a draw the masters vote is the winning number to get striked out.
+
+The contract includes the following methods,
+- Join a game
+- create your bingo card
+- vote for a number
+- see the round
+- see the winning number of the round
+- check if there is a winner, and
+- restarting the game 
+
 This is a Decentralized Bingo Game
 
 it contains two files
