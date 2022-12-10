@@ -30,7 +30,10 @@
 
 ### This project is a part of following Open Source Programs</h2>
 
+
 <div align="center" >
+ 
+ ![Hack](https://user-images.githubusercontent.com/85225156/206849312-2bb41d63-6869-4c02-bcb5-8cdf0118f1e5.png)
 
  <img src="./Images/Hsoc22Logo.png" width="20%">
  &nbsp; &nbsp; &nbsp;
