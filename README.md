@@ -121,6 +121,19 @@ git push origin YourBranchName
 
 </br>
 
+### How to Setup Locally 
+
+**1.** Follow the [PR STEPS](https://github.com/Vikash-8090-Yadav/Solidity-Pathshala#how-to-make-a-pull-request) , after   cloning repo in your local system 
+
+
+**2.** You  can copy  and pate the code in the Remix ide https://remix.ethereum.org/
+
+
+**3.** If u don't know how to use the remix check this , [How to use Remix Ide ](https://github.com/Vikash-8090-Yadav/Solidity-Pathshala/blob/main/Blog/How%20to%20use%20remix%20IDE/How%20to%20use%20remix.ide.md)
+
+
+**4.** Congratulations 🙌🏼 , You have setup the Solidity programme in your PC ,It's time to check the code and Raise a PR 
+
 ### Project Contributors
 <a href="https://github.com/Vikash-8090-Yadav/Solidity-Pathshala/graphs/contributors">
 <img src="https://contrib.rocks/image?repo=Vikash-8090-Yadav/Solidity-Pathshala" />
