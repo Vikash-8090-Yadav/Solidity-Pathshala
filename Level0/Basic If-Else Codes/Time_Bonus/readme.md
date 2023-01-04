@@ -1,0 +1,2 @@
+In a factory people work beyond their time limit which is known as "Over-hours"
+But, transparency in maintaining the balance of the salaries of the people in the over hour shift is mis-managed, to solve this this is a smart contract which shall inform about the time bonus which the workers shall get, this is immutable and transparent.
