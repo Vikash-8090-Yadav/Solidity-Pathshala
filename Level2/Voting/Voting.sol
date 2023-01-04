@@ -1,56 +1,114 @@
 // SPDX-License-Identifier: GPL-3.0
 
-pragma solidity >=0.7.0 <0.9.0;
+pragma solidity ^0.8.0;
 
-contract vote{
-    address public  participant1 = 0xAb8483F64d9C6d1EcF9b849Ae677dD3315835cb2; 
-    address public  participant2 = 0x4B20993Bc481177ec7E8f571ceCaE8A9e22C02db;
-    mapping(address=>uint) user;
-    mapping(address=>bool) check;
+contract Voting {
 
     address public owner;
-    constructor(){
+    address public winnerAddress;
+    string public eventName;
+    uint public totalVote;
+    bool votingStarted;
+
+    struct Candidate{
+        string name;
+        uint age;
+        bool registered;
+        address candidateAddress;
+        uint votes;
+    }
+
+    struct Voter{
+        bool registered;
+        bool voted;
+    }
+
+    event success(string msg);
+    mapping(address=>uint) public candidates;
+    Candidate[] public candidateList;
+    mapping(address=>Voter) public voterList;
+
+    constructor(string memory _eventName){
         owner = msg.sender;
+        eventName = _eventName;
+        totalVote = 0;
+        votingStarted=false;
     }
 
-    modifier onlyonwner(){
-        require(owner == msg.sender,"You are not allowed to declare the result");
-        _;
+    function registerCandidates(string memory _name, uint _age, address _candidateAddress) public {
+        require(msg.sender == owner, "Only owner can register Candidate!!");
+        require(_candidateAddress != owner, "Owner can not participate!!");
+        require(candidates[_candidateAddress] == 0, "Candidate already registered");
+        Candidate memory candidate = Candidate({
+            name: _name,
+            age: _age,
+            registered: true,
+            votes: 0,
+            candidateAddress: _candidateAddress
+        });
+        if(candidateList.length == 0){ //not pushing any candidate on location zero;
+            candidateList.push();
+        }
+        candidates[_candidateAddress] = candidateList.length;
+        candidateList.push(candidate);
+        emit success("Candidate registered!!");
     }
 
-    function participant1_vote()  public {
-        require(msg.sender !=participant1,"You can not vote to yourself");
-        require(check[msg.sender]!=true,"You have already voted");
-        user[participant1]++;
-        check[msg.sender] = true; 
-    }
-        function participant2_vote()  public {
-        require(msg.sender !=participant2,"You can not vote to yourself");
-        require(check[msg.sender]!=true,"You have already voted");
-        user[participant2]+=1;
-        check[msg.sender] = true; 
-    }
+    function whiteListAddress(address _voterAddress) public {
+        require(_voterAddress != owner, "Owner can not vote!!");
+        require(msg.sender == owner, "Only owner can whitelist the addresses!!");
+        require(voterList[_voterAddress].registered == false, "Voter already registered!!");
+        Voter memory voter = Voter({
+            registered: true,
+            voted: false
+        });
 
-    function pati1_cnt_VOTE() view public onlyonwner returns(uint){
-        return user[participant1];
-
+        voterList[_voterAddress] = voter;
+        emit success("Voter registered!!");
     }
 
-    function pati2_cnt_VOTE() view public onlyonwner returns(uint){
-        return user[participant2];
+    function startVoting() public {
+        require(msg.sender == owner, "Only owner can start voting!!");
+        votingStarted = true;
+        emit success("Voting Started!!");
+    }
+
+    function putVote(address _candidateAddress) public {
+        require(votingStarted == true, "Voting not started yet or ended!!");
+        require(msg.sender != owner, "Owner can not vote!!");
+        require(voterList[msg.sender].registered == true, "Voter not registered!!");
+        require(voterList[msg.sender].voted == false, "Already voted!!");
+        require(candidateList[candidates[_candidateAddress]].registered == true, "Candidate not registered");
+
+        candidateList[candidates[_candidateAddress]].votes++;
+        voterList[msg.sender].voted =true;
+
+        uint candidateVotes = candidateList[candidates[_candidateAddress]].votes;
+
+        if(totalVote < candidateVotes){
+            totalVote = candidateVotes;
+            winnerAddress = _candidateAddress;
+        }
+        emit success("Voted !!");
         
     }
 
-    function declare_winner() view public  onlyonwner returns(string memory){
-        if(user[participant1]>user[participant2]){
-            return ("Partcipant1 is winner !!");
-        }
-        else if(user[participant1]==user[participant2]){
-            return("Both the participant are equal");
-        }
-        else{
-            return ("Participant 2 is winner");
-        }  
+    function stopVoting() public {
+        require(msg.sender == owner, "Only owner can start voting!!");
+        votingStarted = false;
+        emit success("Voting stoped!!");
     }
 
+    function getAllCandidate() public view returns(Candidate[] memory list){
+        return candidateList;
+    }
+
+    function votingStatus() public view returns(bool){
+        return votingStarted;
+    }
+
+    function getWinner() public view returns(Candidate memory candidate){
+        require(msg.sender == owner, "Only owner can declare winner!!");
+        return candidateList[candidates[winnerAddress]];
+    }
 }
