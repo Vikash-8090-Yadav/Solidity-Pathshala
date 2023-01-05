@@ -47,3 +47,7 @@ and other functions are self explanatory
 
 
 ![Voting smart contract]<img width="960" alt="ss4" src="https://user-images.githubusercontent.com/71769587/210709847-c4d29be0-bfd0-43ce-95a0-1c260c56b560.png">
+
+
+https://user-images.githubusercontent.com/71769587/210715956-61586c16-d9e1-4a69-a821-0de3a9362a06.mp4
+
