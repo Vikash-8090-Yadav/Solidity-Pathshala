@@ -32,10 +32,8 @@
 
 
 <div align="center" >
- 
- <p align="center">
-  <img src="Images/hacktoberfest.jpg" width="350" title="hover text">
-</p>
+
+ ![Hack](https://user-images.githubusercontent.com/98808802/210781975-9a65820e-1470-42ee-a4bc-9f9c60b48fb5.jpg)
  
  <img src="./Images/Hsoc22Logo.png" width="20%">
  &nbsp; &nbsp; &nbsp;
