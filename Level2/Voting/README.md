@@ -17,29 +17,33 @@ Select Solidity in the Environment and click + symbol right to the browser.
 
 Type the file name and enter the respective code into it.
 
-Step 2:
-
+### Step 2:
 Now compile the Voting.sol file,
-![compile](https://user-images.githubusercontent.com/95535448/182790166-d579baf4-16f6-4924-b0d3-3891119f1561.png)
 
-Step 3:
+![compile]<img width="962" alt="ss1" src="https://user-images.githubusercontent.com/71769587/210709610-99cbd9c9-568b-4795-a614-eb38816141fd.png">
+
+
+### Step 3:
 Once compiled successfully, click “Deploy and run transactions”. and "Deploy" it ,
-![deploy](https://user-images.githubusercontent.com/95535448/182790432-3c5bff42-5e2b-4d49-baf0-e6cdc2260922.png)
+![deploy]<img width="960" alt="ss2" src="https://user-images.githubusercontent.com/71769587/210709765-041b5011-8ce4-463c-85cd-492a1449503e.png">
+![deploy]<img width="960" alt="ss3" src="https://user-images.githubusercontent.com/71769587/210709782-a2519838-a470-41a2-b4b0-bd62defc9a4a.png">
 
-Step 4:
+### Step 4:
 And here you can see the all the transactions and deployed contracts-
-![deployed contracts](https://user-images.githubusercontent.com/95535448/182790663-beb4c612-e4fd-4f44-8cd4-e3caa2f0a05d.png)
+![deployed contracts]<img width="960" alt="ss4" src="https://user-images.githubusercontent.com/71769587/210709847-c4d29be0-bfd0-43ce-95a0-1c260c56b560.png">
 
-Step 5:
+### Step 5:
+
 Functions used in voting smart contract-
-1) partipant1_vote - it is used to give votes to the Participant 1
-2) partipant2_vote - it is used to give vote to the Participant 2
-3) declare_winner - declare's the winner of the poll (only declared by the owner )
-4) partipant1 - gives the address of first participant
-5) partipant2 - give the address of second participant
-6) parti1_cnt_vote - counts the vote of first participant (only acessible by the owner )
-7) parti2_cnt_vote - counts the vote of second participant (only acessible by the owner )
-8) owner - This is used to check the owner's address
+1) putVote: Vote your favourite contestant
+2) registerCandidate: owner accessible function to register the competing candidates
+3) getWinner - declare's the winner of the poll (only declared by the owner )
+4) startVoting , stopVoting: owner accessible function to start and stop voting
+5) whiteListAddress: owner accesible function to register the people who can vote (i.e. only people above 18, of indian origin etc...)
+6) candidateList: get a list of competing candidates
+7) candidate: get address of the competing candidates
+8) VoteList: get a list of voters
+and other functions are self explanatory 
 
 
-![Voting smart contract](https://user-images.githubusercontent.com/95535448/182790817-656888df-a4d4-4f07-a489-71a4e7ca8633.png)
+![Voting smart contract]<img width="960" alt="ss4" src="https://user-images.githubusercontent.com/71769587/210709847-c4d29be0-bfd0-43ce-95a0-1c260c56b560.png">
