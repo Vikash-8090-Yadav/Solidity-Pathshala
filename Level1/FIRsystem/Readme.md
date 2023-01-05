@@ -25,3 +25,9 @@ Functions:
 4. owner: to get the wallet address of the owner
 5. reportCount: count the number of reports
 6. reports: know the exact information about the report including wallet address of the issuer
+
+
+https://user-images.githubusercontent.com/71769587/210714806-5b3cde37-b231-4eb4-9fc3-45dd26436859.mp4
+
+
+
