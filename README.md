@@ -33,8 +33,10 @@
 
 <div align="center" >
  
- ![Hack](https://user-images.githubusercontent.com/85225156/206849312-2bb41d63-6869-4c02-bcb5-8cdf0118f1e5.png)
-
+ <p align="center">
+  <img src="Images/hacktoberfest.jpg" width="350" title="hover text">
+</p>
+ 
  <img src="./Images/Hsoc22Logo.png" width="20%">
  &nbsp; &nbsp; &nbsp;
  <img src="./Images/ssoc22.png" width="20%">  
