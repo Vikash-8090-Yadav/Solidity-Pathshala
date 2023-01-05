@@ -4,42 +4,17 @@
 ## Getting Started :
 
 
-### Step 1:
+Hello dear user !
+The smart contract can be deployed on replit as well as remix IDE. Here I have shared images of how to work with the contract on remix IDE
 
-For opening the remix-ide in browser type: https://remix.ethereum.org/.
-
-A screen will be presented like the following:
-![File explorer](https://user-images.githubusercontent.com/95535448/182686591-5ae38b05-1ea2-4532-9ee1-d368a43de36b.png)
-
-Click on the “file explorer” icon onto the left side bar.
-
-Select Solidity in the Environment and click + symbol right to the browser.
-
-Type the file name and enter the respective code into it.
-
-Step 2:
-
-Now compile the Voting.sol file,
-![compile](https://user-images.githubusercontent.com/95535448/182790166-d579baf4-16f6-4924-b0d3-3891119f1561.png)
-
-Step 3:
-Once compiled successfully, click “Deploy and run transactions”. and "Deploy" it ,
-![deploy](https://user-images.githubusercontent.com/95535448/182790432-3c5bff42-5e2b-4d49-baf0-e6cdc2260922.png)
-
-Step 4:
-And here you can see the all the transactions and deployed contracts-
-![deployed contracts](https://user-images.githubusercontent.com/95535448/182790663-beb4c612-e4fd-4f44-8cd4-e3caa2f0a05d.png)
-
-Step 5:
-Functions used in voting smart contract-
-1) partipant1_vote - it is used to give votes to the Participant 1
-2) partipant2_vote - it is used to give vote to the Participant 2
-3) declare_winner - declare's the winner of the poll (only declared by the owner )
-4) partipant1 - gives the address of first participant
-5) partipant2 - give the address of second participant
-6) parti1_cnt_vote - counts the vote of first participant (only acessible by the owner )
-7) parti2_cnt_vote - counts the vote of second participant (only acessible by the owner )
-8) owner - This is used to check the owner's address
-
-
-![Voting smart contract](https://user-images.githubusercontent.com/95535448/182790817-656888df-a4d4-4f07-a489-71a4e7ca8633.png)
+<img width="962" alt="ss1" src="https://user-images.githubusercontent.com/71769587/210262439-6a7ffc4d-aa85-4431-af42-4fa2cc800d6e.png">
+<br/>You can compile the contract as shown in the image above
+<img width="960" alt="ss2" src="https://user-images.githubusercontent.com/71769587/210262444-5966dda7-3245-4760-8052-b18072a30e50.png">
+<br/>Once compiled successfully, choose any of the given dummy wallet address (meant for testing purpose) to deploy the smart contract
+<img width="960" alt="ss3" src="https://user-images.githubusercontent.com/71769587/210262457-83f31e6d-9d7f-4436-91ef-d04d812fd5d9.png">
+<br/>Once deployed you can see as per our code we have various fields to work upon
+<img width="960" alt="ss4" src="https://user-images.githubusercontent.com/71769587/210262464-27f3db92-c73b-4a76-8252-fafe11dcc6ab.png">
+<br/> First the contract deployer (manager) needs to register the candidates (i.e. competing political parties by filling their wallet addresses, name as well as age which the number of working years in the field)
+There after the manager needs to register the wallet address of eligible voters so that they can cast their votes.
+Once the registrations are done, the manager can start the voting after which the registered voters cast vote to their prefered contestant. Once the voting is completed the manager should end the session by stopping the voting. 
+Then click on the get winner button to get the address and name of the winner party
