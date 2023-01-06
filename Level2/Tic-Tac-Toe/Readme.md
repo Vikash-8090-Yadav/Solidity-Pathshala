@@ -27,6 +27,6 @@ In this repository we will see a Smart Contract for Tic-Tac-toe : a famous game 
 
 ## Screenshot of the working contract .
 
-Screenshot 2022-10-14 230458.png
+![Screenshot 2022-10-14 230458](https://user-images.githubusercontent.com/94488557/201542570-53a6f961-4b30-4410-bfeb-4b3f7e1d29d2.png)
 
 
