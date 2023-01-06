@@ -2,6 +2,9 @@
 
 **Chainlink Data Feeds** are the quickest way to connect your smart contracts to the real-world data such as asset prices, reserve balances, and L2 sequencer health.
 
+![1](https://user-images.githubusercontent.com/95535448/210969743-046dec29-3d5d-40ad-82ca-5d4ef2150e37.jpg)
+
+
 ## Types of data feeds
 
 Data feeds provide many different types of data for your applications.
@@ -9,6 +12,10 @@ Data feeds provide many different types of data for your applications.
 - Price Feeds
 - Proof of Reserve Feeds
 - L2 sequencer uptime feeds
+
+![3](https://user-images.githubusercontent.com/95535448/210970254-80bdab1a-7417-4283-8c1c-df3bf1971409.jpg)
+
+
 ## Price Feeds
 See the Data Feeds Contract Addresses page for a list of networks and proxy addresses.
 
@@ -26,6 +33,8 @@ NFT Floor Pricing Feeds provide the price of the lowest priced NFT available in 
 
 ## L2 sequencer uptime feeds
 L2 sequencer feeds track the last known status of the sequencer on an L2 network at a given point in time. This helps you prevent mass liquidations by providing a grace period to allow customers to react to these events.
+
+![2](https://user-images.githubusercontent.com/95535448/210969793-e596825c-a6ea-4f70-9847-3bfaa5abaa57.png)
 
 ## Components of a data feed
 Data Feeds are an example of a decentralized oracle network and include the following components:
