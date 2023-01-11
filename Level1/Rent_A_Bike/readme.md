@@ -30,9 +30,22 @@ You have to import binance smart chain test BNB for deploying this contract. I h
 
 
 ### Output Screenshots =
+#### 1) screenshot:
+![image](https://user-images.githubusercontent.com/99035115/211892955-254df362-62a2-47fc-8283-f613490b4288.png)
+
+#### 2) screenshot:
+![image](https://user-images.githubusercontent.com/99035115/211892943-0e037a1d-39ff-40fc-bcab-e984967081ca.png)
 
 
 ### Walkthrough Video to compile contract=
+
+#### 1) Intro to smart contract:
+
+https://user-images.githubusercontent.com/99035115/211892428-c2e9281f-d014-49d8-900b-ea586c35d2ac.mp4
+
+#### 2) Smart contract working:
+
+https://user-images.githubusercontent.com/99035115/211893306-0bd5b71f-5a9d-46f8-98bb-442dcdf70714.mp4
 
 
 
