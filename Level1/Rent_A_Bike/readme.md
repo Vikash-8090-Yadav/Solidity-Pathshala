@@ -15,8 +15,11 @@ The calculation of rental money will be always accurate without using a third pa
 
 ### Text Stack :
 [x] Solidity
+
 [x] Remix
+
 [x] Binance smart chain
+
 
 
 ### Are you contributing under any open source program :
