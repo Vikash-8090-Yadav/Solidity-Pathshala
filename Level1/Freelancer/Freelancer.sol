@@ -29,7 +29,7 @@ contract Freelancer {
     }
 
     /**
-    struct schedule track the project state 
+    struct schedule track the project state for each milestone
     e.g. UI development 
     (shortCode = UI_DEV, description = Designing UI, value(price for completing this stage)=1000wei, currentState = proposal)
     So this contract have multiple level like UI dev, coding, Devops and then CI/CD each stage have different schedule state 
@@ -106,6 +106,8 @@ contract Freelancer {
         projectState = ProjectState.initiated;
     }
 
+    // create the schedule with short code its description and pricing for this contract
+    // e.g. shortCode => UI-UX, description => Designing and develop UI
     function addSchedule(
         string memory _shortCode,
         string memory _description,
@@ -121,6 +123,7 @@ contract Freelancer {
         emit scheduleAdded(_shortCode);
     }
 
+    // When the freelancer accepts the proposal of the client
     function acceptProject()
         public
         requiredProjectState(ProjectState.initiated)
@@ -130,6 +133,9 @@ contract Freelancer {
         emit projectAccepted(clientAddress);
     }
 
+    // freelancer only start working on the project after client funded the project
+    // the fund transfer to this contract is kept in this contract and then it is release (transfer to freelancer    
+    // address) after the freelancer complete the stage (e.g. UI development)
     function financeTask(int256 _scheduleID)
         public
         payable
@@ -141,6 +147,7 @@ contract Freelancer {
         emit taskFinanced(_scheduleID);
     }
 
+    // this function tells the client that freelancer started creating the project.
     function starTask(int256 _scheduleID)
         public
         requiredProjectState(ProjectState.accepted)
@@ -151,6 +158,8 @@ contract Freelancer {
         emit taskStarted(_scheduleID);
     }
 
+
+    // this function approves the project and only called by the client after client is staisfied with the work
     function approveTask(int256 _scheduleID)
         public
         requiredProjectState(ProjectState.accepted)
@@ -161,6 +170,7 @@ contract Freelancer {
         emit taskApproved(_scheduleID);
     }
 
+    // after approval of the client freelancer can release the fund to his/her address
     function releaseFunds(int256 _scheduleID)
         public
         payable
@@ -173,6 +183,7 @@ contract Freelancer {
         emit fundReleased(_scheduleID, scheduleRegister[_scheduleID].value);
     }
 
+    // this function is called by the freelancer after the project is completed
     function endProject()
         public
         requiredProjectState(ProjectState.accepted)
@@ -183,6 +194,7 @@ contract Freelancer {
         emit projectEnded();
     }
 
+    // fetch the balance of the contract to ensure all the funds is transfers from this contract to freelancer address
     function getBalance() public view returns (uint256 balance) {
         return address(this).balance;
     }
