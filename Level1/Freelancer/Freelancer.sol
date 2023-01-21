@@ -113,6 +113,7 @@ contract Freelancer {
         string memory _description,
         uint256 _value
     ) public requiredProjectState(ProjectState.initiated) onlyFreelancer {
+        // memory keyword same as memory in a real system this will not be stored in the blockchain
         schedule memory newSchedule;
         newSchedule.shortCode = _shortCode;
         newSchedule.description = _description;
