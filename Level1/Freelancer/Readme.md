@@ -7,7 +7,7 @@ A project follows the following steps:
 * Then the project receives acceptance from the client.
 * And then freelancer starts the working on the project.
 
-## Brief introduction about the code (I have commented the code in the contract itself)
+## Brief introduction about the code (also see comment in the contract)
 
 1. `addSchedule()` this function takes three argument `shortCode`, `description` and `amount` and adds the project to the schedule.
 2. `acceptProject()` after the proposal freelancer can agree with client and accepts the project.
@@ -15,3 +15,6 @@ A project follows the following steps:
 4. `startTask` this function takes `int256` type schedule id for marking the project as started from `scheduleRegister` it marks that project is started for the given stage.
 5. `approveTask` this function takes `int256` type schedule id for marking the project as approved from `scheduleRegister` it marks that project is approved for the given stage and only called by the client.
 6. `releaseFunds` this function takes `int256` type schedule id for releasing the funds from `scheduleRegister` can called after project is accepted and approved by the client.
+
+ ### Sreenshot of the Programme, 
+ ![Screenshot](./screenshot.png)
