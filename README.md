@@ -148,7 +148,8 @@ git push origin YourBranchName
 </tr>
 </table>
 
-### Project Contributors
+## Project Contributors
+
 <a href="https://github.com/Vikash-8090-Yadav/Solidity-Pathshala/graphs/contributors">
 <img src="https://contrib.rocks/image?repo=Vikash-8090-Yadav/Solidity-Pathshala" />
 </a>
