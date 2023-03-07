@@ -1,0 +1,13 @@
+shufo:
+  - shufo2
+# you can set multiple reviewers
+smith:
+  - user1
+  - user2
+# you can use regexp to match issuer
+john.*:
+  - foo
+  - bar
+# fallback
+.*:
+  - Vikash-8090-Yadav
