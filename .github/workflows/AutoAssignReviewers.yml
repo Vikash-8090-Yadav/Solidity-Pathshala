@@ -1,16 +1,14 @@
-name: Add Reviewers
+name: Review Assign
 
 on:
   pull_request:
+    types: [opened, ready_for_review, edited] # 'edited' event subscription required
 
 jobs:
-  build:
+  assign:
     runs-on: ubuntu-latest
     steps:
-    - name: Add Reviewers
-      uses: madrapps/add-reviewers@v1
-      with:
-        token: ${{ secrets.GITHUB_TOKEN }}
-        reviewers: Vikash-8090-Yadav
-        re-request-when-approved: true
-        re-request-when-changes-requested: true
+      - uses: hkusu/review-assign-action@v1
+        with:
+          reviewers: Vikash-8090-Yadav
+          draft-keyword: wip # specify keyword(case insensitive).
