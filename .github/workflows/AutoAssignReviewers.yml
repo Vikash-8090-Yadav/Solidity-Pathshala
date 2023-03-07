@@ -1,16 +1,13 @@
-name: Assign reviewers based on assignees
+name: "Auto Assign"
 on:
   pull_request:
-    types: [assigned, unassigned]
+    types: [opened]
 
 jobs:
-  assignee_to_reviewer:
+  assign:
     runs-on: ubuntu-latest
     steps:
-      - name: Assignee to Reviewer
-        uses: pullreminders/assignee-to-reviewer-action@v1.0.4
-        with:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          commit-message: "Auto-assign reviewers"
-          title: "Add reviewers to pull request"
-          reviewers: Omega12Prime
+    - uses: shufo/auto-assign-reviewer-by-issuer@v1.0.0
+      with:
+        config: '.github/reviewers.yml'
+        token: ${{ secrets.GITHUB_TOKEN }}
