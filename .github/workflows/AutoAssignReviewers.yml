@@ -1,18 +1,13 @@
-
-name: Auto assign reviewers
-
+name: Assign reviewers based on assignees
 on:
   pull_request:
-    types:  [opened]
+    types: [assigned, unassigned]
 
 jobs:
-  assign_reviewers:
+  assignee_to_reviewer:
     runs-on: ubuntu-latest
     steps:
-      - name: Assign reviewers
+      - name: Assignee to Reviewer
         uses: pullreminders/assignee-to-reviewer-action@v1.0.4
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          commit-message: "Auto-assign reviewers"
-          title: "Add reviewers to pull request"
-          reviewers: Vikash-8090-Yadav
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
