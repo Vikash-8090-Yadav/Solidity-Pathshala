@@ -1,0 +1,18 @@
+
+name: Auto assign reviewers
+
+on:
+  pull_request:
+    types:  [opened]
+
+jobs:
+  assign_reviewers:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Assign reviewers
+        uses: pullreminders/assignee-to-reviewer-action@v1.0.4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          commit-message: "Auto-assign reviewers"
+          title: "Add reviewers to pull request"
+          reviewers: Omega12Prime
