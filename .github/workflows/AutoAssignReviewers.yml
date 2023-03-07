@@ -9,5 +9,5 @@ jobs:
     steps:
     - uses: shufo/auto-assign-reviewer-by-issuer@v1.0.0
       with:
-        config: '../reviewers.yml'
+        config: '.github/reviewers.yml'
         token: ${{ secrets.GITHUB_TOKEN }}
