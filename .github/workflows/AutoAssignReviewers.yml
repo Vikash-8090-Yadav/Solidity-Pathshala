@@ -15,4 +15,4 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
           commit-message: "Auto-assign reviewers"
           title: "Add reviewers to pull request"
-          reviewers: Omega12Prime
+          reviewers: Vikash-8090-Yadav
