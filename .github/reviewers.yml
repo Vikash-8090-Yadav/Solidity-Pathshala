@@ -33,21 +33,21 @@ reviewers:
       - lead_desinger # username
       - desinger_a # username
 
-files:
-  # Keys are glob expressions.
-  # You can assign groups defined above as well as GitHub usernames.
-  '**':
-    - repository-owners # group
-    - team:external-reviewers # GitHub team
-  '**/*.js':
-    - core-contributors # group
-    - js-lovers # group
-  '**/*.yml':
-    - core-contributors # group
-    - yamler # username
-  '.github/**':
-    - octopus # username
-    - cat # username
+# files:
+#   # Keys are glob expressions.
+#   # You can assign groups defined above as well as GitHub usernames.
+#   '**':
+#     - repository-owners # group
+#     - team:external-reviewers # GitHub team
+#   '**/*.js':
+#     - core-contributors # group
+#     - js-lovers # group
+#   '**/*.yml':
+#     - core-contributors # group
+#     - yamler # username
+#   '.github/**':
+#     - octopus # username
+#     - cat # username
 
 options:
   ignore_draft: true
