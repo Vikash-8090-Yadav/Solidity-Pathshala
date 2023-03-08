@@ -7,6 +7,16 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Self-assign issue
-        uses: peter-evans/self-assign@v2
+        uses: actions/github-script@v4
         with:
-          repo-token: ${{ secrets.GITHUB_TOKEN }}
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            const issueNumber = context.payload.issue.number;
+            const assignees = [context.payload.issue.user.login];
+            github.issues.addAssignees({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: issueNumber,
+              assignees: assignees
+            });
+Th
