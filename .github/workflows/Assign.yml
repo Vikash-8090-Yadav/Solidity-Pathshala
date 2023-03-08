@@ -19,4 +19,4 @@ jobs:
               issue_number: issueNumber,
               assignees: assignees
             });
-Th
+
