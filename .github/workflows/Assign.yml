@@ -1,17 +1,14 @@
-name: Issue assignment
 
+name: Assign
 on:
-    issues:
-        types: [opened]
-
+  issue_comment:
+    types: [created, edited] 
 jobs:
-    auto-assign:
-        runs-on: ubuntu-latest
-        steps:
-            - name: 'Auto-assign issue'
-              uses: pozil/auto-assign-issue@v1
-              with:
-                  allowSelfAssign: true
-                  
-
-   
+  one:
+    runs-on: ubuntu-latest
+    steps:
+      # .take in an issue comment. 
+      - name: take an issue
+        uses: bdougie/take-action@main
+        with:
+          GITHUB_TOKEN: ${{ github.token }}
