@@ -1,0 +1,13 @@
+name: Auto Assign Issue
+on:
+  issues:
+    types: [opened]
+jobs:
+  assign:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Assign Issue
+        uses: peter-evans/auto-assign@v1.6.0
+        with:
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
+          assignees: author
