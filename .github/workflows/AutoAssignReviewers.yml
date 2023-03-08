@@ -9,5 +9,5 @@ jobs:
       - uses: delivery-much/actions-assigner@v1
         with:
           config: '.github/reviewers.yml'
-          token: ${{ secrets.GH_TOKEN }}
+          token: ${{ secrets.GITHUB_TOKEN }}
           team-reviewers: backend
