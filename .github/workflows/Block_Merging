@@ -1,0 +1,17 @@
+name: Block merging until all workflows pass
+on:
+  pull_request_target:
+    types: [opened, reopened, synchronize]
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Wait for status checks to complete
+        uses: github/wait-for-status@v1
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
+          checks: 'all'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
