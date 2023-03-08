@@ -21,6 +21,6 @@ jobs:
               pull_number: number,
               reviewers,
             };
-            await context.github.pulls.createReviewRequest(pullRequestReviewRequest);
+            await github.pulls.createReviewRequest(pullRequestReviewRequest);
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
