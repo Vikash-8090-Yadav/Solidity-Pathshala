@@ -1,13 +1,14 @@
-name: Auto Assign Issue
+name: Issue assignment
+
 on:
-  issues:
-    types: [opened]
+    issues:
+        types: [opened]
+
 jobs:
-  assign:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Assign Issue
-        uses: peter-evans/auto-assign@v1.6.0
-        with:
-          repo-token: ${{ secrets.GITHUB_TOKEN }}
-          assignees: author
+    auto-assign:
+        runs-on: ubuntu-latest
+        steps:
+            - name: 'Auto-assign issue'
+              uses: pozil/auto-assign-issue@v1
+              with:
+                  allowSelfAssign: true
