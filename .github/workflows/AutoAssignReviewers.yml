@@ -1,26 +1,12 @@
-name: Assign Reviewers on PR Write
-
+name: "Auto Assign"
 on:
-  pull_request:
-    types: [opened, edited]
+  - pull_request
 
 jobs:
-  assign_reviewers:
+  assign_reviewer:
     runs-on: ubuntu-latest
     steps:
-      - name: Assign Reviewers
-        uses: actions/github-script@v5
+      - uses: shufo/auto-assign-reviewer-by-files@v1.1.4
         with:
-          script: |
-            const { owner, repo } = context.repo;
-            const { number } = context.payload.pull_request;
-            const reviewers = ['Vikash-8090-Yadav']; 
-            const pullRequestReviewRequest = {
-              owner,
-              repo,
-              pull_number: number,
-              reviewers,
-            };
-            await github.pulls.createReviewRequest(pullRequestReviewRequest);
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          config: ".github/assign-by-files.yml"
+          token: ${{ secrets.GITHUB_TOKEN }}
