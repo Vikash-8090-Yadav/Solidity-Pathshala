@@ -8,17 +8,19 @@ jobs:
   assign_reviewers:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/github-script@v5
+      - name: Assign Reviewers
+        uses: actions/github-script@v5
         with:
           script: |
             const { owner, repo } = context.repo;
-            const { number } = context.issue;
-            const requested_reviewers = ['reviewer1', 'reviewer2']; // Add reviewers to this array
-            await github.pulls.createReviewRequest({
+            const { number } = context.payload.pull_request;
+            const reviewers = ['Vikash-8090-Yadav']; 
+            const pullRequestReviewRequest = {
               owner,
               repo,
               pull_number: number,
-              reviewers: requested_reviewers
-            });
+              reviewers,
+            };
+            await context.github.pulls.createReviewRequest(pullRequestReviewRequest);
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
