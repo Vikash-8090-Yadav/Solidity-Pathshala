@@ -11,6 +11,7 @@ jobs:
             - name: 'Auto-assign issue'
               uses: pozil/auto-assign-issue@v1
               with:
-                  assignees: Vikash-8090-Yadav
-                  numOfAssignee: 2
                   allowSelfAssign: true
+                  assignees: Vikash-8090-Yadav
+
+   
