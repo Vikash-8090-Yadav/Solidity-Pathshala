@@ -1,15 +1,16 @@
-name: "Auto Assign"
+name: Auto Assign Reviewer
 on:
-  - pull_request
-
-jobs:
+  pull_request:
   
+jobs:
   assign_reviewer:
-    permissions: write-all
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
     steps:
       - uses: shufo/auto-assign-reviewer-by-files@v1.1.4
         with:
           config: ".github/reviewers.yml"
         env:
-          SECRET_TOKEN: ${{secrets.TOKEN1}}
+          GITHUB_TOKEN: ${{ secrets.TOKEN1 }}
