@@ -12,4 +12,5 @@ jobs:
       - uses: shufo/auto-assign-reviewer-by-files@v1.1.4
         with:
           config: ".github/reviewers.yml"
-          token: ${{ secrets.TOKEN1 }}
+          token: ${{ secrets.GITHUB_TOKEN }}
+
