@@ -11,4 +11,5 @@ jobs:
       - uses: shufo/auto-assign-reviewer-by-files@v1.1.4
         with:
           config: ".github/reviewers.yml"
-          token: ${{ secrets.TOKEN }}
+        env:
+          SECRET_TOKEN: ${{secrets.TOKEN1}}
