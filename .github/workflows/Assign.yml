@@ -1,14 +1,12 @@
-
-name: Assign
+name: Self-assign issue
 on:
-  issue_comment:
-    types: [created, edited] 
+  issues:
+    types: [opened]
 jobs:
-  one:
+  self-assign:
     runs-on: ubuntu-latest
     steps:
-      # .take in an issue comment. 
-      - name: take an issue
-        uses: bdougie/take-action@main
+      - name: Self-assign issue
+        uses: peter-evans/self-assign@v2
         with:
-          GITHUB_TOKEN: ${{ github.token }}
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
