@@ -1,0 +1,22 @@
+
+
+name: 'Auto Assign Reviewer by Files'
+description: 'Automatically assigns reviewers based on changed files'
+branding:
+  icon: 'at-sign'
+  color: 'green'
+inputs:
+  token:
+    description: 'A github token'
+    required: true
+    default: 'default'
+  config:
+    description: 'condifuration file'
+    required: false
+    default: '.github/assign-by-files.yml'
+outputs:
+  time: # output will be available to future steps 
+    description: 'The message to output'
+runs:
+  using: 'node12'
+  main: 'dist/index.js'
