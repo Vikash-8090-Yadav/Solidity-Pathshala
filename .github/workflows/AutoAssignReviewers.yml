@@ -20,3 +20,4 @@ jobs:
           # This defaults to false if not specified.
           # See https://github.com/necojackarc/auto-request-review/issues/76 for more details.
           use_local: true
+          ll
