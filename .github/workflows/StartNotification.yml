@@ -16,7 +16,7 @@ jobs:
           to: ${{ secrets.TELEGRAM_CHAT_ID }}
           token: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           message: |
-            Actor ${GITHUB_ACTOR} starred ${GITHUB_REPOSITORY}.
+            ${{ github.actor }} starred ${{ github.repository }}.
 
 permissions:
   contents: read
