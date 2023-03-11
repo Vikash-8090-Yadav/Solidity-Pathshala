@@ -1,0 +1,33 @@
+name: Pull Request Synchronization Notification
+
+on:
+  pull_request:
+    types: [synchronize]
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - name: Send notification via Telegram
+        uses: appleboy/telegram-action@master
+        with:
+          to: ${{ secrets.TELEGRAM_CHAT_ID }}
+          token: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          message: |
+            ${GITHUB_ACTOR} synchronized pull request ${GITHUB_REPOSITORY}/pull/${{ github.event.number }}:
+            "${{ github.event.pull_request.title }}"
+            (${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}/pull/${{ github.event.number }})
+
+permissions:
+  contents: read
+  issues: read
+  packages: read
+  pull-requests: read
+  repository-projects: read
+  security-events: read
+  statuses: read
+
+env:
+  GITHUB_TOKEN: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
