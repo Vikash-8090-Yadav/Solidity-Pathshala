@@ -17,7 +17,7 @@ jobs:
           token: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           message: |
             ${{ github.actor }} starred ${{ github.repository }}.
-            https://github.com/${GITHUB_REPOSITORY}
+            (https://github.com/Solidity-Pathshala)
 
 permissions:
   contents: read
