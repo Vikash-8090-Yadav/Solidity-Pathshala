@@ -28,7 +28,7 @@ jobs:
             Event: ${{ github.event_name }}
             Repository: ${{ github.repository }}
             Actor: ${{ github.actor }}
-        permissions:
+permissions:
           contents: read
           issues: read
           packages: read
