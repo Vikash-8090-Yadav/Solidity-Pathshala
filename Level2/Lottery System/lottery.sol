@@ -1,14 +1,24 @@
 // SPDX-License-Identifier: GPL-3.0
 pragma solidity >=0.7.0 <0.9.0;
 // added VRF(verifiable random function contract and interface to generate truly random number) 
+
+//for more information about VRF: https://docs.chain.link/vrf  visit this website
+
 import "@chainlink/contracts/src/v0.8/interfaces/VRFCoordinatorV2Interface.sol";
 import "@chainlink/contracts/src/v0.8/VRFConsumerBaseV2.sol";
+import "@chainlink/contracts/src/v0.8/interfaces/AutomationCompatibleInterface.sol";
 
 error Lottery__SendMoreToEnterLottery();
 error   Lottery__LotteryNotOpen();
+error Lottery__TransferFailed();
+error Lottery__UpkeepNotNeeded(
+  uint256 currentBalance,
+  uint256 numPlayers,
+  uint256 LotteryState
+);
 
-contract Lottery is is VRFConsumerBaseV2{
-    // address public manager;
+contract Lottery is  VRFConsumerBaseV2,AutomationCompatibleInterface{
+    
     // address payable[] public participants;
 
     enum LotteryState {
@@ -25,6 +35,7 @@ contract Lottery is is VRFConsumerBaseV2{
   uint32 private immutable i_callbackGasLimit;
   uint16 private constant REQUEST_CONFIRMATIONS = 3;
   uint32 private constant NUM_WORDS = 1;
+  address public manager;
 
 //making variable private as well as immuatable
   uint256 private immutable i_interval;
@@ -42,7 +53,7 @@ contract Lottery is is VRFConsumerBaseV2{
   constructor(
     address vrfCoordinatorV2,
     uint64 subscriptionId,
-    bytes32 gasLane, // keyHash
+    bytes32 gasLane, 
     uint256 interval,
     uint256 entranceFee,
     uint32 callbackGasLimit
@@ -59,10 +70,6 @@ contract Lottery is is VRFConsumerBaseV2{
     manager=msg.sender;
   }
   // Defining functions
-        modifier onlyManager() {
-        require(msg.sender == owner, "Only the owner can call this function");
-        _;
-    }
 
     //Enter  Lottery function with revert rathar than require which uses relativelt more gas
 
@@ -136,8 +143,8 @@ contract Lottery is is VRFConsumerBaseV2{
     emit WinnerPicked(recentWinner);
   }
   //adding getter functions
-    function getRaffleState() public view returns (RaffleState) {
-    return s_raffleState;
+    function getLotteryState() public view returns (LotteryState) {
+    return s_LotteryState;
   }
 
   function getNumWords() public pure returns (uint256) {
