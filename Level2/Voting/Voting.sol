@@ -1,6 +1,8 @@
 // SPDX-License-Identifier: GPL-3.0
 
 pragma solidity ^0.8.0;
+error Voting__NotOwner();
+error Voting__AlreadyRegistered();
 
 contract Voting {
 
@@ -8,7 +10,7 @@ contract Voting {
     address public winnerAddress;
     string public eventName;
     uint public totalVote;
-    bool votingStarted;
+    bool  votingStarted;
 
     struct Candidate{
         string name;
@@ -34,11 +36,23 @@ contract Voting {
         totalVote = 0;
         votingStarted=false;
     }
+    //added modifier function
+       modifier onlyOwner() {
+        require(msg.sender == owner, "Only the owner can call this function");
+        _;
+    }
+    // added revert instead of reequire to optimze gas ;
 
-    function registerCandidates(string memory _name, uint _age, address _candidateAddress) public {
-        require(msg.sender == owner, "Only owner can register Candidate!!");
-        require(_candidateAddress != owner, "Owner can not participate!!");
-        require(candidates[_candidateAddress] == 0, "Candidate already registered");
+    function registerCandidates(string memory _name, uint _age, address _candidateAddress) onlyOwner public {
+        // require(msg.sender == owner, "Only owner can register Candidate!!");
+        // require(_candidateAddress != owner, "Owner can not participate!!");
+        // require(candidates[_candidateAddress] == 0, "Candidate already registered");
+        if(_candidateAddress == owner){
+            revert Voting__NotOwner();
+        }
+        if(candidates[_candidateAddress] != 0){
+            revert Voting__AlreadyRegistered();
+        }
         Candidate memory candidate = Candidate({
             name: _name,
             age: _age,
