@@ -14,8 +14,8 @@ contract voting{
     //Voter[] public voters;
     mapping(uint=>address) voters;
     mapping(address=>bool) voted;
-    uint public len=0;
-    uint public sum=0;
+    uint public len;
+    uint public sum;
     uint public candidate_winner;
     uint public winner;
 
@@ -35,9 +35,9 @@ contract voting{
 
     //Winner of Each round can be seen 
     function findWinner() private{
-        uint max=0;
+        uint max;
         
-        for(uint i=0;i<25;i++){
+        for(uint i; i<25; ++i){
             if(freq[i]>max){
                 max=freq[i];
                 winner=i+1;
@@ -49,11 +49,11 @@ contract voting{
 
     //Restart a round
     function reset() private{
-        for(uint i=0;i<len;i++){
+        for(uint i; i<len; ++i){
             voted[voters[i]]=false;
         }
 
-        for(uint i=0;i<25;i++) freq[i]=0;
+        for(uint i; i<25; ++i) freq[i]=0;
     }
 
     //Vote for cross out (with error handling)
