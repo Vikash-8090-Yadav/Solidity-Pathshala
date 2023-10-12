@@ -6,9 +6,9 @@ contract Voting {
 
     address public owner;
     address public winnerAddress;
+    bool votingStarted;
     string public eventName;
     uint public totalVote;
-    bool votingStarted;
 
     struct Candidate{
         string name;
